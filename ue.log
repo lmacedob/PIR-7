@@ -1,0 +1,969 @@
+15:58:32.276493 [UE  ] [I] Built in Release mode using commit 179c9d4 on branch master.
+15:58:34.111698 [MAC ] [I] [    0] Resetting MAC
+15:58:34.113405 [MAC ] [I] [    0] Logical Channel Setup: LCID=0, LCG=0, priority=0, PBR=-1, BSD=50ms, bucket_size=0
+15:58:34.113427 [MAC ] [I] [    0] Logical Channel Setup: LCID=1, LCG=0, priority=1, PBR=-1, BSD=50ms, bucket_size=0
+15:58:34.113460 [MAC ] [I] [    0] BSR:   Configured timer reTX 2560 ms
+15:58:34.113468 [RLC ] [I] Added radio bearer SRB0 in Transparent Mode
+15:58:34.113473 [RLC ] [I] Configured radio bearer SRB0 in Transparent Mode
+15:58:34.113485 [USIM] [I] Read Home PLMN Id=00101
+15:58:34.113589 [NAS ] [I] Read GUTI from file m_tmsi: 195273fe, mcc: 1, mnc: 1, mme_group_id: 1, mme_code: 1a
+15:58:34.113626 [NAS ] [I] Read security ctxt from file .ctxt. ksi: 0, k_asme: 4d2461056e903bac270c2b625571e04efd7f2f90775c2e6af6b79526268c7610, tx_count: 3, rx_count: 3, int_alg: 1, enc_alg: 0
+15:58:34.113643 [RRC ] [I] using srand seed of 113643
+15:58:34.594665 [MAC ] [I] [    0] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+15:58:34.594686 [RLC ] [I] LCID=0, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:34.594699 [GW  ] [I] RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:34.596066 [NAS ] [I] Attach Request
+15:58:34.596102 [NAS ] [I] No PLMN selected. Starting PLMN Search...
+15:58:34.596106 [RRC ] [I] Proc "PLMN Search" - Starting PLMN search
+15:58:34.596109 [RRC ] [I] Proc "Cell Search" - Starting...
+15:58:34.596137 [NAS ] [I] Proc "PLMN Search" - Starting...
+15:58:34.596219 [PHY0] [I] [    0] Cell Search: Start EARFCN index=0/1
+15:58:34.796418 [PHY0] [I] [    0] Cell Search: changing frequency to EARFCN=3400
+15:58:34.796572 [PHY0] [I] [    0] SYNC:  Set DL EARFCN=3400, f_dl=5120.0 MHz, f_ul=5180.0 MHz
+15:58:34.877718 [MAC ] [I] [ 1003] BSR:   triggered_bsr_type=0, LCID QUEUE status: 0: 0 1: 0 
+15:58:34.961740 [MAC ] [I] [ 2011] BSR:   triggered_bsr_type=0, LCID QUEUE status: 0: 0 1: 0 
+15:58:34.999529 [PHY0] [I] [    0] Cell Search: Setting Cell search state
+15:58:34.999861 [PHY0] [I] [    0] SYNC:  Setting Cell Search sampling rate
+15:58:34.999897 [PHY0] [I] [    0] SYNC:  Searching for cell...
+15:58:35.104891 [PHY0] [I] [    0] SYNC:  PSS/SSS detected: Mode=FDD, PCI=1, CFO=1.7 KHz, CP=Normal  
+15:58:35.112672 [PHY0] [I] [    0] SYNC:  MIB Decoded: Mode=FDD, PCI=1, PRB=50, Spare=15, Ports=1, CFO=1.7 KHz
+15:58:35.112713 [RLC ] [I] BCCH BCH message received.
+             0000: 62 d8 0f 
+15:58:35.112763 [RRC ] [I] BCCH-BCH - Rx MIB (3 B)
+15:58:35.130327 [PHY0] [I] [    0] Cell Search: Setting sampling rate and synchronizing SFN...
+15:58:35.130349 [PHY0] [I] [    0] SYNC:  Setting sampling rate 11.52 MHz
+15:58:35.132783 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (0/100)
+15:58:35.133700 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (1/100)
+15:58:35.134612 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (2/100)
+15:58:35.135719 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (3/100)
+15:58:35.136709 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (4/100)
+15:58:35.137601 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (5/100)
+15:58:35.138660 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (6/100)
+15:58:35.139529 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (7/100)
+15:58:35.140596 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (8/100)
+15:58:35.142423 [PHY0] [I] [    0] SYNC:  Waiting for PSS while trying to decode MIB (9/100)
+15:58:35.151754 [PHY0] [I] [    0] SYNC:  DONE, SNR=2.1 dB, TTI=7330, sfn_offset=1
+15:58:35.151804 [PHY0] [I] [    0] Cell Search: Sync OK. Camping on cell PCI=1
+15:58:35.151841 [PHY0] [I] [    0] Cell Search: No more frequencies in the current EARFCN set
+15:58:35.151855 [RRC ] [I] Proc "Cell Search" - PHY cell search completed.
+15:58:35.151882 [RRC ] [I] Proc "Cell Search" - Cell found in this frequency. Setting new serving cell...
+15:58:35.151892 [RRC ] [I] Adding neighbour cell EARFCN=3400, PCI=1, nof_neighbours=1
+15:58:35.151976 [RRC ] [I] Neighbours: [earfcn=3400, pci=1, spare=15, rsrp=nan]
+15:58:35.152005 [RRC ] [I] Setting serving cell earfcn=3400, PCI=1, rsrp=nan, nof_neighbours=0
+15:58:35.152011 [RRC ] [I] Proc "Cell Search" - Cell has no SIB1. Obtaining SIB1...
+15:58:35.152018 [RRC ] [I] Proc "SI Acquire" - Starting SI Acquire procedure for SIB1
+15:58:35.152027 [MAC ] [I] [ 2505] SCHED: Searching for DL dci for SI-RNTI window_st=7345, window_len=1
+15:58:35.152034 [RRC ] [I] Proc "SI Acquire" - Instructed MAC to search for SIB1, win_start=7345, win_len=1, period=20, sched_index=0
+15:58:35.152522 [MAC ] [I] [ 7331] BSR:   triggered_bsr_type=0, LCID QUEUE status: 0: 0 1: 0 
+15:58:35.160588 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.5 dBm.
+15:58:35.180571 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.5 dBm.
+15:58:35.187633 [MAC ] [I] [ 7366] SCHED: Searching for DL dci for SI-RNTI window_st=7385, window_len=1
+15:58:35.187661 [RRC ] [I] Proc "SI Acquire" - Instructed MAC to search for SIB1, win_start=7385, win_len=1, period=20, sched_index=0
+15:58:35.200618 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.7 dBm.
+15:58:35.206639 [PHY0] [I] [ 7385] PDCCH: cc=0, f=1A, cce= 0, L=3, riv=250, pid=0, mcs={2}, ndi={0}, tpc_pucch=0, snr=9.5 dB
+15:58:35.206703 [PHY0] [I] [ 7385] PDSCH: cc=0, rnti=0xffff, nof_prb=6, nof_re=756, tbs={18}, mod={2}, rv={2}, crc={OK}, it=0.5, snr=9.5 dB
+15:58:35.206733 [MAC ] [I] [ 7385] DL 0 (TB 0):  newTX tbs=18, rv=2, ack=OK, ndi=0
+15:58:35.206836 [RLC ] [I] BCCH TXSCH message received.
+             0000: 40 40 04 03 00 07 00 19 b0 18 14 60 10 50 00 01 
+             0010: 82 99 
+15:58:35.207452 [MAC ] [I] [ 7386] SCHED: Searching for DL dci for SI-RNTI window_st=-1, window_len=-1
+15:58:35.207472 [RRC ] [I] BCCH-DLSCH - Rx systemInformationBlockType1 (18 B)
+15:58:35.207478 [RRC ] [I] Processing SIB1 (1/1)
+15:58:35.207488 [RRC ] [I] SIB1 received, CellID=2817, si_window=20, sib2_period=16
+15:58:35.208477 [RRC ] [I] Proc "SI Acquire" - SIB1 acquired successfully
+15:58:35.208493 [RRC ] [I] Proc "Cell Search" - Completed successfully
+15:58:35.208501 [RRC ] [I] Proc "PLMN Search" - completed PLMN search
+15:58:35.208505 [RRC ] [I] Proc "PLMN Search" - completed with success
+15:58:35.208527 [NAS ] [I] Found PLMN:  Id=00101, TAC=7
+15:58:35.208556 [NAS ] [I] Selecting Home PLMN Id=00101
+15:58:35.208562 [RRC ] [I] PLMN Selected 00101
+15:58:35.208590 [NAS ] [I] Generating attach request
+15:58:35.208611 [NAS ] [I] Generating PDN Connectivity Request
+15:58:35.208616 [NAS ] [I] Requesting GUTI attach. m_tmsi: 195273fe, mcc: 1, mnc: 1, mme_group_id: 1, mme_code: 1a
+15:58:35.208775 [RRC ] [I] Set ue-Identity to 0x26:0x424834046
+15:58:35.208798 [NAS ] [I] Proc "RRC Connect" - Starting...
+15:58:35.208828 [RRC ] [I] Proc "Connection Request" - Initiation of Connection establishment procedure
+15:58:35.208835 [RRC ] [I] Proc "Cell Selection" - Completed with success. Informing proc Connection Request
+15:58:35.208858 [PHY0] [I] [ 7387] Setting configuration for cc_worker=0, cc=0
+15:58:35.208864 [PHY1] [I] [ 7386] Setting configuration for cc_worker=1, cc=0
+15:58:35.208871 [PHY2] [I] [    0] Setting configuration for cc_worker=2, cc=0
+15:58:35.208877 [RRC ] [I] Set MAC default configuration
+15:58:35.208886 [MAC ] [I] [ 7387] BSR:   Configured timer reTX 2560 ms
+15:58:35.208893 [RRC ] [I] Set MAC main config: harq-MaxReTX=5, bsr-TimerReTX=2560, bsr-TimerPeriodic=-1
+15:58:35.208898 [RRC ] [I] Proc "Connection Request" - Configuring serving cell...
+15:58:35.208903 [RRC ] [I] Proc "Serving Cell Configuration" - Starting a Serving Cell Configuration Procedure
+15:58:35.208909 [RRC ] [I] Proc "Serving Cell Configuration" - Cell has SIB1
+15:58:35.208914 [RRC ] [I] Proc "Serving Cell Configuration" - Cell has no SIB2. Obtaining SIB2
+15:58:35.208919 [RRC ] [I] Proc "SI Acquire" - Starting SI Acquire procedure for SIB2
+15:58:35.208927 [MAC ] [I] [ 7387] SCHED: Searching for DL dci for SI-RNTI window_st=7520, window_len=20
+15:58:35.208932 [RRC ] [I] Proc "SI Acquire" - Instructed MAC to search for SIB2, win_start=7520, win_len=20, period=16, sched_index=0
+15:58:35.220577 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.9 dBm.
+15:58:35.240588 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.1 dBm.
+15:58:35.260593 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.3 dBm.
+15:58:35.280609 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.5 dBm.
+15:58:35.300647 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.7 dBm.
+15:58:35.320627 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.0 dBm.
+15:58:35.340656 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:35.350564 [PHY0] [I] [ 7529] PDCCH: cc=0, f=1A, cce= 0, L=3, riv=250, pid=0, mcs={5}, ndi={0}, tpc_pucch=0, snr=14.0 dB
+15:58:35.350641 [PHY0] [I] [ 7529] PDSCH: cc=0, rnti=0xffff, nof_prb=6, nof_re=756, tbs={28}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=14.0 dB
+15:58:35.350652 [MAC ] [I] [ 7529] DL 0 (TB 0):  newTX tbs=28, rv=0, ack=OK, ndi=0
+15:58:35.350727 [RLC ] [I] BCCH TXSCH message received.
+             0000: 00 00 0c e1 bf 78 88 00 ca 09 e0 01 00 04 10 01 
+             0010: 82 99 45 ab 9c 50 06 00 00 c1 c0 00 
+15:58:35.351566 [MAC ] [I] [ 7530] SCHED: Searching for DL dci for SI-RNTI window_st=-1, window_len=-1
+15:58:35.351587 [RRC ] [I] BCCH-DLSCH - Rx systemInformation (28 B)
+15:58:35.351594 [RRC ] [I] Processing SIB2 (0/1)
+15:58:35.351600 [RRC ] [I] SIB2 received
+15:58:35.351606 [MAC ] [I] [ 7530] BSR:   Configured timer reTX 2560 ms
+15:58:35.351630 [PHY0] [I] [ 7529] Setting configuration for cc_worker=0, cc=0
+15:58:35.351635 [PHY1] [I] [ 7530] Setting configuration for cc_worker=1, cc=0
+15:58:35.351658 [PHY2] [I] [    0] Setting configuration for cc_worker=2, cc=0
+15:58:35.351663 [RRC ] [I] Set RACH ConfigCommon: NofPreambles=52, ResponseWindow=10, ContentionResolutionTimer=64 ms
+15:58:35.351668 [RRC ] [I] Set PUSCH ConfigCommon: P0_pusch=0.000000, DMRS cs=0, delta_ss=0, N_sb=1
+15:58:35.351672 [RRC ] [I] Set PUCCH ConfigCommon: DeltaShift=2, CyclicShift=0, N1=0, NRB=2
+15:58:35.351677 [RRC ] [I] Set PRACH ConfigCommon: SeqIdx=128, HS=no, FreqOffset=2, ZC=5, ConfigIndex=3
+15:58:35.351682 [RRC ] [I] Set Constants and Timers: N310=1, N311=1, t300=2000, t301=100, t310=1000, t311=1000
+15:58:35.352456 [RRC ] [I] Proc "SI Acquire" - SIB2 acquired successfully
+15:58:35.352471 [RRC ] [I] Proc "Serving Cell Configuration" - Cell has no SIB3. Obtaining SIB3
+15:58:35.352479 [RRC ] [I] Proc "SI Acquire" - Starting SI Acquire procedure for SIB3
+15:58:35.352486 [RRC ] [I] Proc "SI Acquire" - Could not find SIB3 scheduling in SIB1
+15:58:35.352493 [RRC ] [I] Proc "Serving Cell Configuration" - Cell has no SIB13. Obtaining SIB13
+15:58:35.352498 [RRC ] [I] Proc "SI Acquire" - Starting SI Acquire procedure for SIB13
+15:58:35.352504 [RRC ] [I] Proc "SI Acquire" - Could not find SIB13 scheduling in SIB1
+15:58:35.352510 [RRC ] [I] Proc "Serving Cell Configuration" - Serving Cell Configuration Procedure has finished successfully
+15:58:35.352540 [RRC ] [I] SRB0 - Tx rrcConnectionRequest (6 B)
+15:58:35.352548 [RLC ] [I] SRB0 Tx SDU, queue size=0, bytes=0
+             0000: 41 a1 95 27 3f e8 
+15:58:35.352557 [RRC ] [I] Proc "Connection Request" - Waiting for RRCConnectionSetup/Reject or expiry
+15:58:35.353511 [MAC ] [I] [ 7532] SR:    PUCCH not configured. Starting RA procedure
+15:58:35.353522 [MAC ] [I] [ 7532] RA:    INIT:   Starting PRACH by MAC order
+15:58:35.353528 [PHY0] [I] [ 7531] PRACH: configIdx=3, rootSequence=128, zeroCorrelationConfig=5, freqOffset=2
+15:58:35.359080 [PHY0] [I] [ 7537] Applying time_adv_sec=0.0 us, next_offset=0
+15:58:35.360479 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.2 dBm.
+15:58:35.368561 [MAC ] [I] [ 7547] RA:    PDCCH:  seq=37, ra-rnti=0x2, ra-tti=7551, f_id=0
+15:58:35.368739 [PHY0] [I] [ 7545] PRACH: Transmitted preamble=37, tti_tx=7551, CFO=1.05 KHz, nof_sf=1, target_power=-104.0 dBm
+15:58:35.379688 [PHY1] [I] [ 7558] PDCCH: cc=0, f=1A, cce= 0, L=3, riv=100, pid=0, mcs={0}, ndi={0}, tpc_pucch=0, snr=14.8 dB
+15:58:35.379750 [PHY1] [I] [ 7558] PDSCH: cc=0, rnti=0x2, nof_prb=3, nof_re=378, tbs={7}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=14.8 dB
+15:58:35.379759 [PHY0] [I] [ 7557] Applying time_adv_sec=0.5 us, next_offset=-6
+15:58:35.379764 [PHY0] [I] [ 7557] PHY:   Set TA RAR: ta_cmd: 1, n_ta: 16, ta_usec: 0.5
+15:58:35.379769 [MAC ] [I] [ 7558] RA:    Rx:     RAPID=37, TA=1, T-CRNTI=0x46
+15:58:35.380534 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.2 dBm.
+15:58:35.381644 [RLC ] [I] TX SRB0, Transparent Mode PDU, queue size=0, bytes=0
+             0000: 41 a1 95 27 3f e8 
+15:58:35.381665 [MAC ] [I] [ 7560] BSR:   Type Regular, Format Short, Value=6,0,0,0
+15:58:35.381677 [MAC ] [I] [ 7560] UL 4:  New TX for Msg3, RV=0, TBS=7
+15:58:35.381762 [PHY1] [I] [ 7560] PUSCH: cc=0, tti_tx=7564, rnti=0x46, rb=(2,4), nof_re=432, tbs=7, mod=2, rv=0
+15:58:35.382599 [MAC ] [I] [ 7561] RA:    ConRes: Starting ContentionResolutionTimer=64 ms
+15:58:35.383438 [MAC ] [I] [ 7562] SR:    PUCCH not configured. Starting RA procedure
+15:58:35.383450 [MAC ] [W] [ 7562] Trying to start PRACH by MAC order in invalid state (RA:    ConRes: )
+15:58:35.389544 [PHY1] [I] [ 7568] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.389557 [MAC ] [I] [ 7568] RA:    ConRes: Restarting ContentionResolutionTimer=64 ms
+15:58:35.400544 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.3 dBm.
+15:58:35.414510 [PHY0] [I] [ 7593] PDCCH: cc=0, f=1, cce=16, L=3, rbg=0x1e000, pid=0, mcs={0}, ndi={1}, tpc_pucch=1, snr=13.6 dB
+15:58:35.414540 [MAC ] [I] [ 7593] Considering NDI in pid=0 to be toggled for first Temporal C-RNTI
+15:58:35.414589 [PHY0] [I] [ 7593] PDSCH: cc=0, rnti=0x46, nof_prb=12, nof_re=1512, tbs={41}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=13.6 dB
+15:58:35.414606 [MAC ] [I] [ 7593] RA:    ConRes: Random Access Complete.     c-rnti=0x46, ta=1
+15:58:35.414612 [MAC ] [I] [ 7593] DL 0 (TB 0):  newTX tbs=41, rv=0, ack=OK, ndi=1
+15:58:35.414668 [MAC ] [I] [ 7593] Delivering PDU for lcid=0, 21 bytes
+15:58:35.414770 [PHY0] [I] [ 7593] PUCCH: cc=0, tti_tx=7597, rnti=0x46, f=1a, n_pucch=28, ack=1
+15:58:35.415504 [RRC ] [I] SRB0 - Rx rrcConnectionSetup (21 B)
+15:58:35.415545 [RRC ] [I] Set cqi-PUCCH-ResourceIndex=0, cqi-pmi-ConfigIndex=37, cqi-FormatIndicatorPeriodic=0
+15:58:35.415549 [RRC ] [I] Set PHY config ded: SR-n_pucch=0, SR-ConfigIndex=16, SR-TransMax=0
+15:58:35.415588 [PHY0] [I] [ 7593] Setting configuration for cc_worker=0, cc=0
+15:58:35.415686 [PHY1] [I] [ 7594] Setting configuration for cc_worker=1, cc=0
+15:58:35.415698 [PHY2] [I] [    0] Setting configuration for cc_worker=2, cc=0
+15:58:35.415706 [MAC ] [I] [ 7594] BSR:   Configured timer periodic 20 ms
+15:58:35.415731 [MAC ] [I] [ 7594] BSR:   Configured timer reTX 320 ms
+15:58:35.415734 [MAC ] [I] [ 7594] PHR:   Configured timer periodic 50 ms
+15:58:35.415741 [PDCP] [I] Init SRB1 with bearer ID: 1
+15:58:35.415747 [PDCP] [I] SN len bits: 5, SN len bytes: 1, reordering window: 0, Maximum SN 31
+15:58:35.415750 [PDCP] [I] Add SRB1 (lcid=1, bearer_id=1, sn_len=5bits)
+15:58:35.415760 [RLC ] [I] Added radio bearer SRB1 in Acknowledged Mode
+15:58:35.415765 [RLC ] [I] SRB1 configured: t_poll_retx=45, poll_pdu=-1, poll_byte=-1, max_retx_thresh=4, t_reordering=35, t_status_prohibit=0
+15:58:35.415768 [RLC ] [I] Configured radio bearer SRB1 in Acknowledged Mode
+15:58:35.415780 [MAC ] [I] [ 7594] Logical Channel Setup: LCID=1, LCG=0, priority=1, PBR=-1, BSD=0ms, bucket_size=0
+15:58:35.415808 [RRC ] [I] Added radio bearer SRB1
+15:58:35.415841 [RRC ] [I] SRB1 - Tx rrcConnectionSetupComplete (35 B)
+15:58:35.415846 [PDCP] [I] TX SRB1 SDU, SN: 0, do_integrity = false, do_encryption = false
+             0000: 20 00 40 2e 11 b5 45 18 06 0e 82 02 17 ec 01 e2 
+             0010: 20 00 02 34 32 a4 e7 fc 05 e0 e0 00 08 04 03 a0 
+15:58:35.415858 [RLC ] [I] SRB1 Tx SDU (40 B, tx_sdu_queue_len=0)
+             0000: 00 20 00 40 2e 11 b5 45 18 06 0e 82 02 17 ec 01 
+             0010: e2 20 00 02 34 32 a4 e7 fc 05 e0 e0 00 08 04 03 
+15:58:35.416593 [RRC ] [I] Proc "Connection Request" - Finished connection request procedure successfully.
+15:58:35.416604 [NAS ] [I] Proc "RRC Connect" - Connection established correctly. Waiting for Attach
+15:58:35.417613 [PHY1] [I] [ 7596] PUCCH: cc=0, tti_tx=7600, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.420564 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.4 dBm.
+15:58:35.440579 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.6 dBm.
+15:58:35.448745 [MAC ] [I] [ 7627] RA:    Complt: RA waiting procedure completed
+15:58:35.457643 [PHY1] [I] [ 7636] PUCCH: cc=0, tti_tx=7640, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.460575 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.8 dBm.
+15:58:35.480633 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.9 dBm.
+15:58:35.497673 [PHY1] [I] [ 7676] PUCCH: cc=0, tti_tx=7680, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.500589 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:35.520658 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:35.537666 [PHY1] [I] [ 7716] PUCCH: cc=0, tti_tx=7720, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.540609 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.4 dBm.
+15:58:35.560672 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.5 dBm.
+15:58:35.577682 [PHY1] [I] [ 7756] PUCCH: cc=0, tti_tx=7760, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.580809 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.6 dBm.
+15:58:35.594616 [MAC ] [I] [ 7773] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+15:58:35.594626 [RLC ] [I] LCID=0, RX throughput: 0.000168 Mbps. TX throughput: 0.000048 Mbps.
+15:58:35.594630 [RLC ] [I] LCID=1, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:35.594633 [GW  ] [I] RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:35.600708 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.5 dBm.
+15:58:35.617758 [PHY1] [I] [ 7796] PUCCH: cc=0, tti_tx=7800, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.620717 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.5 dBm.
+15:58:35.640693 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:35.657778 [PHY1] [I] [ 7836] PUCCH: cc=0, tti_tx=7840, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.660832 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:35.680794 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:35.697806 [PHY1] [I] [ 7876] PUCCH: cc=0, tti_tx=7880, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.700523 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.2 dBm.
+15:58:35.720529 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.2 dBm.
+15:58:35.735484 [MAC ] [I] [ 7914] SR:    Starting Procedure. dsrTransMax=64
+15:58:35.735514 [MAC ] [I] [ 7914] SR:    Signalling PHY sr_counter=1
+15:58:35.737621 [PHY1] [I] [ 7916] PUCCH: cc=0, tti_tx=7920, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.738633 [PHY0] [I] [ 7917] PUCCH: cc=0, tti_tx=7921, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:35.740632 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:35.746704 [PHY0] [I] [ 7925] PDCCH: cc=0, f=0, cce=16, L=2, riv=347, mcs=0, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.7 dB
+15:58:35.746718 [MAC ] [I] [ 7925] BSR:   Type Regular, Format Short, Value=43,0,0,0
+15:58:35.746756 [RLC ] [I] SRB1 Tx PDU SN=0 (42 B)
+             0000: a0 00 00 20 00 40 2e 11 b5 45 18 06 0e 82 02 17 
+             0010: ec 01 e2 20 00 02 34 32 a4 e7 fc 05 e0 e0 00 08 
+15:58:35.746795 [MAC ] [I] [ 7925] UL 1:  New TX, RV=0, TBS=157
+15:58:35.746994 [PHY0] [I] [ 7925] PUSCH: cc=0, tti_tx=7929, rnti=0x46, rb=(2,46), nof_re=6480, tbs=157, mod=2, rv=0
+15:58:35.754502 [PHY0] [I] [ 7933] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.755660 [PHY1] [I] [ 7934] PDCCH: cc=0, f=1, cce=20, L=2, rbg=0x10000, pid=0, mcs={3}, ndi={0}, tpc_pucch=1, snr=13.0 dB
+15:58:35.755672 [PHY1] [I] [ 7934] PDCCH: cc=0, f=0, cce=16, L=2, riv=202, mcs=10, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=13.0 dB
+15:58:35.755697 [PHY1] [I] [ 7934] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={22}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=13.0 dB
+15:58:35.755726 [MAC ] [I] [ 7934] DL 0 (TB 0):  newTX tbs=22, rv=0, ack=OK, ndi=0
+15:58:35.755762 [MAC ] [I] [ 7934] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.755765 [MAC ] [I] [ 7934] UL 2:  New TX, RV=0, TBS=109
+15:58:35.755799 [MAC ] [I] [ 7934] Delivering PDU for lcid=1, 2 bytes
+15:58:35.755811 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 04 
+15:58:35.755846 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 1, N_nack = 0
+15:58:35.755876 [MAC ] [I] [ 7934] Delivering PDU for lcid=1, 14 bytes
+15:58:35.755882 [RLC ] [I] SRB1 Rx data PDU SN=0 (12 B)
+             0000: 00 08 00 18 3a a8 08 06 00 00 00 00 
+15:58:35.755891 [RLC ] [I] SRB1 Status packet requested through polling bit
+15:58:35.755896 [RLC ] [I] SRB1 Rx SDU (12 B)
+             0000: 00 08 00 18 3a a8 08 06 00 00 00 00 
+15:58:35.755902 [PDCP] [I] RX SRB1 PDU (12 B), do_integrity = false, do_encryption = false
+             0000: 00 08 00 18 3a a8 08 06 00 00 00 00 
+15:58:35.755924 [PDCP] [I] RX SRB1 PDU SN: 0
+             0000: 08 00 18 3a a8 08 06 
+15:58:35.755936 [PHY1] [I] [ 7934] PUSCH: cc=0, tti_tx=7938, rnti=0x46, rb=(2,6), nof_re=720, tbs=109, mod=2, rv=0, ack=1
+15:58:35.756590 [MAC ] [I] [ 7935] SR:    Starting Procedure. dsrTransMax=64
+15:58:35.756621 [MAC ] [I] [ 7935] SR:    Signalling PHY sr_counter=1
+15:58:35.756656 [RRC ] [I] SRB1 - Rx dlInformationTransfer (7 B)
+15:58:35.756665 [NAS ] [I] DL SRB1 PDU
+             0000: 07 55 01 
+15:58:35.756674 [NAS ] [I] DL SRB1 Decrypted PDU
+             0000: 07 55 01 
+15:58:35.756700 [NAS ] [I] Received Identity Request. ID type: 1
+15:58:35.756711 [RRC ] [I] SRB1 - Tx ulInformationTransfer (14 B)
+15:58:35.756736 [PDCP] [I] TX SRB1 SDU, SN: 1, do_integrity = false, do_encryption = false
+             0000: 48 01 60 ea c1 01 22 02 02 06 4a 8e d3 00 
+15:58:35.756764 [RLC ] [I] SRB1 Tx SDU (19 B, tx_sdu_queue_len=0)
+             0000: 01 48 01 60 ea c1 01 22 02 02 06 4a 8e d3 00 00 
+             0010: 00 00 00 
+15:58:35.758740 [PHY0] [I] [ 7937] PUCCH: cc=0, tti_tx=7941, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:35.760554 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:35.763556 [PHY1] [I] [ 7942] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.766718 [PHY0] [I] [ 7945] PDCCH: cc=0, f=0, cce=16, L=2, riv=702, mcs=15, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.1 dB
+15:58:35.766732 [MAC ] [I] [ 7945] BSR:   Type Regular, Format Short, Value=24,0,0,0
+15:58:35.766771 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 1, N_nack = 0
+15:58:35.766780 [RLC ] [I] SRB1 Tx PDU SN=1 (21 B)
+             0000: a0 01 01 48 01 60 ea c1 01 22 02 02 06 4a 8e d3 
+             0010: 00 00 00 00 00 
+15:58:35.766790 [MAC ] [I] [ 7945] UL 5:  New TX, RV=0, TBS=533
+15:58:35.766949 [PHY0] [I] [ 7945] PUSCH: cc=0, tti_tx=7949, rnti=0x46, rb=(2,16), nof_re=2160, tbs=533, mod=4, rv=0
+15:58:35.774504 [PHY0] [I] [ 7953] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.775668 [PHY1] [I] [ 7954] PDCCH: cc=0, f=1, cce=20, L=2, rbg=0x18000, pid=0, mcs={5}, ndi={1}, tpc_pucch=1, snr=12.0 dB
+15:58:35.775683 [PHY1] [I] [ 7954] PDCCH: cc=0, f=0, cce=16, L=2, riv=102, mcs=9, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.0 dB
+15:58:35.775726 [PHY1] [I] [ 7954] PDSCH: cc=0, rnti=0x46, nof_prb=6, nof_re=756, tbs={63}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=12.0 dB
+15:58:35.775734 [MAC ] [I] [ 7954] DL 0 (TB 0):  newTX tbs=63, rv=0, ack=OK, ndi=1
+15:58:35.775788 [MAC ] [I] [ 7954] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.775826 [MAC ] [I] [ 7954] Delivering PDU for lcid=1, 2 bytes
+15:58:35.775859 [MAC ] [I] [ 7954] UL 6:  New TX, RV=0, TBS=57
+15:58:35.775884 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 08 
+15:58:35.775996 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 2, N_nack = 0
+15:58:35.776028 [MAC ] [I] [ 7954] Delivering PDU for lcid=1, 47 bytes
+15:58:35.776035 [RLC ] [I] SRB1 Rx data PDU SN=1 (45 B)
+             0000: 01 08 01 20 3a 90 06 8d e9 ee 0e 6d a0 3d d7 1a 
+             0010: 4c 92 98 90 85 5d 20 87 94 4f 0b 0e a3 34 80 0e 
+15:58:35.776064 [RLC ] [I] SRB1 Status packet requested through polling bit
+15:58:35.776068 [PHY1] [I] [ 7954] PUSCH: cc=0, tti_tx=7958, rnti=0x46, rb=(2,4), nof_re=432, tbs=57, mod=2, rv=0, ack=1
+15:58:35.776068 [RLC ] [I] SRB1 Rx SDU (45 B)
+             0000: 01 08 01 20 3a 90 06 8d e9 ee 0e 6d a0 3d d7 1a 
+             0010: 4c 92 98 90 85 5d 20 87 94 4f 0b 0e a3 34 80 0e 
+15:58:35.776084 [PDCP] [I] RX SRB1 PDU (45 B), do_integrity = false, do_encryption = false
+             0000: 01 08 01 20 3a 90 06 8d e9 ee 0e 6d a0 3d d7 1a 
+             0010: 4c 92 98 90 85 5d 20 87 94 4f 0b 0e a3 34 80 0e 
+15:58:35.776109 [PDCP] [I] RX SRB1 PDU SN: 1
+             0000: 08 01 20 3a 90 06 8d e9 ee 0e 6d a0 3d d7 1a 4c 
+             0010: 92 98 90 85 5d 20 87 94 4f 0b 0e a3 34 80 0e 8d 
+15:58:35.776659 [MAC ] [I] [ 7955] SR:    Starting Procedure. dsrTransMax=64
+15:58:35.776671 [MAC ] [I] [ 7955] SR:    Signalling PHY sr_counter=1
+15:58:35.776684 [RRC ] [I] SRB1 - Rx dlInformationTransfer (40 B)
+15:58:35.776712 [NAS ] [I] DL SRB1 PDU
+             0000: 07 52 00 d1 bd 3d c1 cd b4 07 ba e3 49 92 53 12 
+             0010: 10 ab a4 10 f2 89 e1 61 d4 66 90 01 d1 ac 1f f2 
+15:58:35.776745 [NAS ] [I] DL SRB1 Decrypted PDU
+             0000: 07 52 00 d1 bd 3d c1 cd b4 07 ba e3 49 92 53 12 
+             0010: 10 ab a4 10 f2 89 e1 61 d4 66 90 01 d1 ac 1f f2 
+15:58:35.776756 [NAS ] [I] Received Authentication Request
+15:58:35.776781 [NAS ] [I] MCC=61441, MNC=65281
+15:58:35.776793 [NAS ] [I] Network authentication successful
+15:58:35.776817 [NAS ] [I] Sending Authentication Response
+15:58:35.776826 [RRC ] [I] SRB1 - Tx ulInformationTransfer (14 B)
+15:58:35.776834 [PDCP] [I] TX SRB1 SDU, SN: 2, do_integrity = false, do_encryption = false
+             0000: 48 01 60 ea 61 1a 35 83 fe 51 3c 2c 39 a0 
+15:58:35.776846 [RLC ] [I] SRB1 Tx SDU (19 B, tx_sdu_queue_len=0)
+             0000: 02 48 01 60 ea 61 1a 35 83 fe 51 3c 2c 39 a0 00 
+             0010: 00 00 00 
+15:58:35.776858 [NAS ] [I] Generated k_asme:
+             0000: c5 93 e4 f2 4f de c4 58 01 d1 9d f8 c6 24 73 dd 
+             0010: 01 3e 3e 7d a6 fa c8 d7 c4 27 a3 af b1 9b 6e 92 
+15:58:35.777610 [PHY1] [I] [ 7956] PUCCH: cc=0, tti_tx=7960, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.778643 [PHY0] [I] [ 7957] PUCCH: cc=0, tti_tx=7961, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:35.780566 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:35.783558 [PHY1] [I] [ 7962] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.786757 [PHY0] [I] [ 7965] PDCCH: cc=0, f=0, cce=16, L=2, riv=702, mcs=15, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=13.1 dB
+15:58:35.786790 [MAC ] [I] [ 7965] BSR:   Type Regular, Format Short, Value=24,0,0,0
+15:58:35.786847 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 2, N_nack = 0
+15:58:35.786876 [RLC ] [I] SRB1 Tx PDU SN=2 (21 B)
+             0000: a0 02 02 48 01 60 ea 61 1a 35 83 fe 51 3c 2c 39 
+             0010: a0 00 00 00 00 
+15:58:35.786886 [MAC ] [I] [ 7965] UL 1:  New TX, RV=0, TBS=533
+15:58:35.787080 [PHY0] [I] [ 7965] PUSCH: cc=0, tti_tx=7969, rnti=0x46, rb=(2,16), nof_re=2160, tbs=533, mod=4, rv=0
+15:58:35.794526 [PHY0] [I] [ 7973] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.795609 [PHY1] [I] [ 7974] PDCCH: cc=0, f=1, cce=20, L=2, rbg=0x10000, pid=0, mcs={6}, ndi={0}, tpc_pucch=1, snr=12.4 dB
+15:58:35.795619 [PHY1] [I] [ 7974] PDCCH: cc=0, f=0, cce=16, L=2, riv=102, mcs=9, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.4 dB
+15:58:35.795702 [PHY1] [I] [ 7974] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={32}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=12.4 dB
+15:58:35.795710 [MAC ] [I] [ 7974] DL 0 (TB 0):  newTX tbs=32, rv=0, ack=OK, ndi=0
+15:58:35.795722 [MAC ] [I] [ 7974] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.795725 [MAC ] [I] [ 7974] UL 2:  New TX, RV=0, TBS=57
+15:58:35.795784 [MAC ] [I] [ 7974] Delivering PDU for lcid=1, 2 bytes
+15:58:35.795805 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 0c 
+15:58:35.795835 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 3, N_nack = 0
+15:58:35.795839 [MAC ] [I] [ 7974] Delivering PDU for lcid=1, 24 bytes
+15:58:35.795842 [RLC ] [I] SRB1 Rx data PDU SN=2 (22 B)
+             0000: 02 08 00 69 bd af 83 90 e0 00 3a e8 08 00 17 83 
+             0010: 80 02 00 00 00 00 
+15:58:35.795873 [RLC ] [I] SRB1 Status packet requested through polling bit
+15:58:35.795878 [RLC ] [I] SRB1 Rx SDU (22 B)
+             0000: 02 08 00 69 bd af 83 90 e0 00 3a e8 08 00 17 83 
+             0010: 80 02 00 00 00 00 
+15:58:35.795885 [PDCP] [I] RX SRB1 PDU (22 B), do_integrity = false, do_encryption = false
+             0000: 02 08 00 69 bd af 83 90 e0 00 3a e8 08 00 17 83 
+             0010: 80 02 00 00 00 00 
+15:58:35.795890 [PHY1] [I] [ 7974] PUSCH: cc=0, tti_tx=7978, rnti=0x46, rb=(2,4), nof_re=432, tbs=57, mod=2, rv=0, ack=1
+15:58:35.795910 [PDCP] [I] RX SRB1 PDU SN: 2
+             0000: 08 00 69 bd af 83 90 e0 00 3a e8 08 00 17 83 80 
+             0010: 02 
+15:58:35.796604 [MAC ] [I] [ 7975] SR:    Starting Procedure. dsrTransMax=64
+15:58:35.796614 [MAC ] [I] [ 7975] SR:    Signalling PHY sr_counter=1
+15:58:35.796625 [RRC ] [I] SRB1 - Rx dlInformationTransfer (17 B)
+15:58:35.796636 [NAS ] [I] DL SRB1 PDU
+             0000: 37 b5 f0 72 1c 00 07 5d 01 00 02 f0 70 
+15:58:35.796650 [NAS ] [I] DL SRB1 Decrypted PDU
+             0000: 37 b5 f0 72 1c 00 07 5d 01 00 02 f0 70 
+15:58:35.796661 [NAS ] [I] Received Security Mode Command ksi: 0, eea: EEA0, eia: 128-EIA1
+15:58:35.796694 [NAS ] [I] NAS encryption key - k_nas_enc
+             0000: 66 40 e1 ce 5f 56 82 03 f2 1f ef 0e 53 b8 be a0 
+             0010: ac 67 0e 9e fc b7 dd a4 2b 01 97 a5 20 fb c1 98 
+15:58:35.796724 [NAS ] [I] NAS integrity key - k_nas_int
+             0000: 9f 7f df c2 45 12 df 0f 2e f1 ff 12 a5 aa 08 01 
+             0010: 4d 47 22 79 8c e1 75 21 08 5b d1 56 bb 75 00 89 
+15:58:35.796964 [NAS ] [I] Integrity check ok. Local: count=0, Received: count=0
+15:58:35.797120 [NAS ] [I] Sending Security Mode Complete nas_current_ctxt.tx_count=0, RB=SRB1
+15:58:35.797128 [RRC ] [I] SRB1 - Tx ulInformationTransfer (11 B)
+15:58:35.797132 [PDCP] [I] TX SRB1 SDU, SN: 3, do_integrity = false, do_encryption = false
+             0000: 48 01 08 e5 b2 02 61 c0 00 eb c0 
+15:58:35.797158 [RLC ] [I] SRB1 Tx SDU (16 B, tx_sdu_queue_len=0)
+             0000: 03 48 01 08 e5 b2 02 61 c0 00 eb c0 00 00 00 00 
+15:58:35.798670 [PHY0] [I] [ 7977] PUCCH: cc=0, tti_tx=7981, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:35.800582 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:35.803556 [PHY1] [I] [ 7982] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.806781 [PHY0] [I] [ 7985] PDCCH: cc=0, f=0, cce=16, L=2, riv=702, mcs=15, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.8 dB
+15:58:35.806795 [MAC ] [I] [ 7985] BSR:   Type Regular, Format Short, Value=21,0,0,0
+15:58:35.806834 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 3, N_nack = 0
+15:58:35.806843 [RLC ] [I] SRB1 Tx PDU SN=3 (18 B)
+             0000: a0 03 03 48 01 08 e5 b2 02 61 c0 00 eb c0 00 00 
+             0010: 00 00 
+15:58:35.806873 [MAC ] [I] [ 7985] UL 5:  New TX, RV=0, TBS=533
+15:58:35.807063 [PHY0] [I] [ 7985] PUSCH: cc=0, tti_tx=7989, rnti=0x46, rb=(2,16), nof_re=2160, tbs=533, mod=4, rv=0
+15:58:35.814534 [PHY0] [I] [ 7993] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.815618 [PHY1] [I] [ 7994] PDCCH: cc=0, f=1, cce=20, L=2, rbg=0x10000, pid=0, mcs={0}, ndi={1}, tpc_pucch=1, snr=13.0 dB
+15:58:35.815628 [PHY1] [I] [ 7994] PDCCH: cc=0, f=0, cce=16, L=2, riv=102, mcs=8, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=13.0 dB
+15:58:35.815647 [PHY1] [I] [ 7994] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={7}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=13.0 dB
+15:58:35.815653 [MAC ] [I] [ 7994] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=1
+15:58:35.815732 [MAC ] [I] [ 7994] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.815736 [MAC ] [I] [ 7994] UL 6:  New TX, RV=0, TBS=49
+15:58:35.815801 [MAC ] [I] [ 7994] Delivering PDU for lcid=1, 2 bytes
+15:58:35.815833 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 10 
+15:58:35.815862 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 4, N_nack = 0
+15:58:35.815930 [PHY1] [I] [ 7994] PUSCH: cc=0, tti_tx=7998, rnti=0x46, rb=(2,4), nof_re=432, tbs=49, mod=2, rv=0, ack=1
+15:58:35.816784 [PHY0] [I] [ 7995] PDCCH: cc=0, f=1, cce=16, L=2, rbg=0x10000, pid=1, mcs={2}, ndi={1}, tpc_pucch=1, snr=12.8 dB
+15:58:35.816875 [PHY0] [I] [ 7995] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={18}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=12.8 dB
+15:58:35.816884 [MAC ] [I] [ 7995] DL 1 (TB 0):  newTX tbs=18, rv=0, ack=OK, ndi=1
+15:58:35.816939 [MAC ] [I] [ 7995] Delivering PDU for lcid=1, 11 bytes
+15:58:35.816969 [RLC ] [I] SRB1 Rx data PDU SN=3 (9 B)
+             0000: 03 30 00 20 32 5a 7f 1c 05 
+15:58:35.816985 [RLC ] [I] SRB1 Status packet requested through polling bit
+15:58:35.816990 [RLC ] [I] SRB1 Rx SDU (9 B)
+             0000: 03 30 00 20 32 5a 7f 1c 05 
+15:58:35.817000 [PDCP] [I] RX SRB1 PDU (9 B), do_integrity = false, do_encryption = false
+             0000: 03 30 00 20 32 5a 7f 1c 05 
+15:58:35.817009 [PDCP] [I] RX SRB1 PDU SN: 3
+             0000: 30 00 20 32 
+15:58:35.817029 [PHY0] [I] [ 7995] PUCCH: cc=0, tti_tx=7999, rnti=0x46, f=1a, n_pucch=28, ack=1
+15:58:35.817500 [MAC ] [I] [ 7996] SR:    Starting Procedure. dsrTransMax=64
+15:58:35.817510 [MAC ] [I] [ 7996] SR:    Signalling PHY sr_counter=1
+15:58:35.817537 [RRC ] [I] SRB1 - Rx securityModeCommand (4 B)
+15:58:35.817544 [RRC ] [I] Received Security Mode Command eea: EEA0, eia: 128-EIA2
+15:58:35.817561 [RRC ] [I] RRC encryption key - k_rrc_enc
+             0000: 09 1d 5a ee 70 87 ec 62 78 88 7f be b6 00 e6 3a 
+             0010: 80 26 be 23 5b 23 a8 f0 1e 55 c6 de 5a 8c c3 f4 
+15:58:35.817570 [RRC ] [I] RRC integrity key  - k_rrc_int
+             0000: 40 e0 dc 30 c6 fb 6b d9 3c b9 be d3 f3 56 bd d2 
+             0010: b6 ab 44 c1 75 b7 eb c2 54 bb 7a 20 f5 6e ee c3 
+15:58:35.817577 [RRC ] [I] UP encryption key  - k_up_enc
+             0000: ad 70 20 8a 12 9c 56 51 23 5f 4e 39 76 9b af d1 
+             0010: b5 a8 44 38 69 25 6d ea 3f 55 6d b3 e5 d5 89 c8 
+15:58:35.817584 [PDCP] [I] Configuring security with 128-EIA2 and EEA0
+15:58:35.817591 [RRC ] [I] SRB1 - Tx securityModeComplete (2 B)
+15:58:35.817596 [PDCP] [I] TX SRB1 SDU, SN: 4, do_integrity = true, do_encryption = false
+             0000: 28 00 
+15:58:35.817608 [RLC ] [I] SRB1 Tx SDU (7 B, tx_sdu_queue_len=0)
+             0000: 04 28 00 60 83 0b 14 
+15:58:35.817700 [PHY1] [I] [ 7996] PUCCH: cc=0, tti_tx=8000, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.818668 [PHY0] [I] [ 7997] PUCCH: cc=0, tti_tx=8001, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:35.820600 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:35.823534 [PHY1] [I] [ 8002] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.826778 [PHY0] [I] [ 8005] PDCCH: cc=0, f=0, cce=16, L=2, riv=702, mcs=15, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.0 dB
+15:58:35.826831 [MAC ] [I] [ 8005] BSR:   Type Regular, Format Short, Value=12,0,0,0
+15:58:35.826891 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 4, N_nack = 0
+15:58:35.826900 [RLC ] [I] SRB1 Tx PDU SN=4 (9 B)
+             0000: a0 04 04 28 00 60 83 0b 14 
+15:58:35.826929 [MAC ] [I] [ 8005] UL 1:  New TX, RV=0, TBS=533
+15:58:35.827109 [PHY0] [I] [ 8005] PUSCH: cc=0, tti_tx=8009, rnti=0x46, rb=(2,16), nof_re=2160, tbs=533, mod=4, rv=0
+15:58:35.834557 [PHY0] [I] [ 8013] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.835589 [PHY1] [I] [ 8014] PDCCH: cc=0, f=1, cce=20, L=2, rbg=0x1c000, pid=0, mcs={6}, ndi={0}, tpc_pucch=1, snr=12.7 dB
+15:58:35.835600 [PHY1] [I] [ 8014] PDCCH: cc=0, f=0, cce=16, L=2, riv=52, mcs=7, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.7 dB
+15:58:35.835652 [PHY1] [I] [ 8014] PDSCH: cc=0, rnti=0x46, nof_prb=9, nof_re=1134, tbs={117}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=12.7 dB
+15:58:35.835686 [MAC ] [I] [ 8014] DL 0 (TB 0):  newTX tbs=117, rv=0, ack=OK, ndi=0
+15:58:35.835758 [MAC ] [I] [ 8014] Delivering PDU for lcid=1, 2 bytes
+15:58:35.835760 [MAC ] [I] [ 8014] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.835772 [MAC ] [I] [ 8014] UL 2:  New TX, RV=0, TBS=28
+15:58:35.835771 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 14 
+15:58:35.835805 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 5, N_nack = 0
+15:58:35.835812 [MAC ] [I] [ 8014] Delivering PDU for lcid=1, 104 bytes
+15:58:35.835818 [RLC ] [I] SRB1 Rx data PDU SN=4 (102 B)
+             0000: 04 20 16 00 82 00 4a 27 b7 97 96 e8 01 07 42 01 
+             0010: 3e 06 00 00 f1 10 00 07 00 1d 52 01 c1 01 07 07 
+15:58:35.835828 [RLC ] [I] SRB1 Status packet requested through polling bit
+15:58:35.835864 [RLC ] [I] SRB1 Rx SDU (102 B)
+             0000: 04 20 16 00 82 00 4a 27 b7 97 96 e8 01 07 42 01 
+             0010: 3e 06 00 00 f1 10 00 07 00 1d 52 01 c1 01 07 07 
+15:58:35.835875 [PDCP] [I] RX SRB1 PDU (102 B), do_integrity = true, do_encryption = true
+             0000: 04 20 16 00 82 00 4a 27 b7 97 96 e8 01 07 42 01 
+             0010: 3e 06 00 00 f1 10 00 07 00 1d 52 01 c1 01 07 07 
+15:58:35.835880 [PDCP] [I] RX SRB1 PDU (decrypted)
+             0000: 04 20 16 00 82 00 4a 27 b7 97 96 e8 01 07 42 01 
+             0010: 3e 06 00 00 f1 10 00 07 00 1d 52 01 c1 01 07 07 
+15:58:35.835886 [PDCP] [I] MAC match
+             0000: 88 05 61 26 
+15:58:35.835890 [PDCP] [I] RX SRB1 PDU SN: 4
+             0000: 20 16 00 82 00 4a 27 b7 97 96 e8 01 07 42 01 3e 
+             0010: 06 00 00 f1 10 00 07 00 1d 52 01 c1 01 07 07 06 
+15:58:35.835902 [PHY1] [I] [ 8014] PUSCH: cc=0, tti_tx=8018, rnti=0x46, rb=(2,3), nof_re=288, tbs=28, mod=2, rv=0, ack=1
+15:58:35.836405 [MAC ] [I] [ 8015] SR:    Starting Procedure. dsrTransMax=64
+15:58:35.836412 [MAC ] [I] [ 8015] SR:    Signalling PHY sr_counter=1
+15:58:35.836431 [RRC ] [I] SRB1 - Rx rrcConnectionReconfiguration (97 B)
+15:58:35.836440 [RRC ] [I] Set cqi-PUCCH-ResourceIndex=0, cqi-pmi-ConfigIndex=37, cqi-FormatIndicatorPeriodic=0
+15:58:35.836445 [RRC ] [I] Set PHY config ded: SR-n_pucch=0, SR-ConfigIndex=16, SR-TransMax=64
+15:58:35.836472 [PHY0] [I] [ 8015] Setting configuration for cc_worker=0, cc=0
+15:58:35.836477 [PHY1] [I] [ 8014] Setting configuration for cc_worker=1, cc=0
+15:58:35.836482 [PHY2] [I] [    0] Setting configuration for cc_worker=2, cc=0
+15:58:35.836489 [PDCP] [I] Init SRB2 with bearer ID: 2
+15:58:35.836496 [PDCP] [I] SN len bits: 5, SN len bytes: 1, reordering window: 0, Maximum SN 31
+15:58:35.836502 [PDCP] [I] Add SRB2 (lcid=2, bearer_id=2, sn_len=5bits)
+15:58:35.836526 [PDCP] [I] Configuring security with 128-EIA2 and EEA0
+15:58:35.836534 [RLC ] [I] Added radio bearer SRB2 in Acknowledged Mode
+15:58:35.836541 [RLC ] [I] SRB2 configured: t_poll_retx=45, poll_pdu=-1, poll_byte=-1, max_retx_thresh=4, t_reordering=35, t_status_prohibit=0
+15:58:35.836548 [RLC ] [I] Configured radio bearer SRB2 in Acknowledged Mode
+15:58:35.836555 [MAC ] [I] [ 8015] Logical Channel Setup: LCID=2, LCG=0, priority=3, PBR=-1, BSD=0ms, bucket_size=0
+15:58:35.836563 [RRC ] [I] Added radio bearer SRB2
+15:58:35.836568 [PDCP] [I] Init DRB1 with bearer ID: 1
+15:58:35.836572 [PDCP] [I] SN len bits: 12, SN len bytes: 2, reordering window: 2048, Maximum SN 4095
+15:58:35.836577 [PDCP] [I] Add DRB1 (lcid=3, bearer_id=1, sn_len=12bits)
+15:58:35.836581 [PDCP] [I] Configuring security with 128-EIA2 and EEA0
+15:58:35.836588 [RLC ] [I] Added radio bearer DRB1 in Unacknowledged Mode
+15:58:35.836594 [RLC ] [I] DRB1 configured in Unacknowledged Mode: t_reordering=45 ms, rx_sn_field_length=10 bits, tx_sn_field_length=10 bits
+15:58:35.836598 [RLC ] [I] Configured radio bearer DRB1 in Unacknowledged Mode
+15:58:35.836603 [MAC ] [I] [ 8015] Logical Channel Setup: LCID=3, LCG=2, priority=13, PBR=-1, BSD=100ms, bucket_size=-100
+15:58:35.836642 [RRC ] [I] Added radio bearer DRB1 (LCID=3)
+15:58:35.836649 [RRC ] [I] MEAS: Quantity configuration k_rsrp=4, k_rsrq=4
+15:58:35.836653 [RRC ] [I] nof active measId=0
+15:58:35.836681 [RRC ] [I] SRB1 - Tx rrcConnectionReconfigurationComplete (2 B)
+15:58:35.836688 [PDCP] [I] TX SRB1 SDU, SN: 5, do_integrity = true, do_encryption = true
+             0000: 10 00 
+15:58:35.836696 [PDCP] [I] TX SRB1 SDU (encrypted)
+             0000: 05 10 00 d6 52 a1 ce 
+15:58:35.836702 [RLC ] [I] SRB1 Tx SDU (7 B, tx_sdu_queue_len=0)
+             0000: 05 10 00 d6 52 a1 ce 
+15:58:35.836709 [NAS ] [I] DL SRB1 PDU
+             0000: 27 b7 97 96 e8 01 07 42 01 3e 06 00 00 f1 10 00 
+             0010: 07 00 1d 52 01 c1 01 07 07 06 73 72 73 61 70 6e 
+15:58:35.836812 [NAS ] [I] Integrity check ok. Local: count=1, Received: count=1
+15:58:35.836819 [NAS ] [I] DL SRB1 Decrypted PDU
+             0000: 27 b7 97 96 e8 01 07 42 01 3e 06 00 00 f1 10 00 
+             0010: 07 00 1d 52 01 c1 01 07 07 06 73 72 73 61 70 6e 
+15:58:35.836827 [NAS ] [I] Received Attach Accept
+15:58:35.836832 [RRC ] [I] Set ue-Identity to 0x26:0x192450138
+15:58:35.836838 [NAS ] [I] Network attach successful. APN: srsapn, IP: 172.16.0.2
+15:58:35.836894 [GW  ] [I] TUN file descriptor = 16
+15:58:35.838821 [PHY0] [I] [ 8017] PUCCH: cc=0, tti_tx=8021, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:35.840707 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.2 dBm.
+15:58:35.840873 [NAS ] [I] DNS: 8.8.8.8
+15:58:35.841337 [GW  ] [I] GW IP packet receiver thread run_enable
+15:58:35.841357 [GW  ] [I] TX PDU
+             0000: 60 00 00 00 00 08 3a ff fe 80 00 00 00 00 00 00 
+             0010: 55 23 b5 86 de 7f 66 f7 ff 02 00 00 00 00 00 00 
+15:58:35.841455 [RRC ] [I] Disabling 64QAM PUSCH
+15:58:35.841465 [NAS ] [I] Sending Attach Complete
+15:58:35.841480 [RRC ] [I] SRB2 - Tx ulInformationTransfer (16 B)
+15:58:35.841487 [PDCP] [I] TX SRB2 SDU, SN: 0, do_integrity = true, do_encryption = true
+             0000: 48 01 a4 e2 85 a2 20 40 20 e8 60 00 6a 40 18 40 
+15:58:35.841503 [PDCP] [I] TX SRB2 SDU (encrypted)
+             0000: 00 48 01 a4 e2 85 a2 20 40 20 e8 60 00 6a 40 18 
+             0010: 40 55 b4 4d 32 
+15:58:35.841514 [RLC ] [I] SRB2 Tx SDU (21 B, tx_sdu_queue_len=0)
+             0000: 00 48 01 a4 e2 85 a2 20 40 20 e8 60 00 6a 40 18 
+             0010: 40 55 b4 4d 32 
+15:58:35.841536 [NAS ] [I] Proc "RRC Connect" - Success: EMM Registered correctly.
+15:58:35.841544 [NAS ] [I] Proc "PLMN Search" - Completed with success
+15:58:35.841548 [NAS ] [I] Attach Request from PLMN Search finished successfully
+15:58:35.841629 [PDCP] [I] TX DRB1 SDU, SN: 0, do_integrity = false, do_encryption = true
+             0000: 60 00 00 00 00 08 3a ff fe 80 00 00 00 00 00 00 
+             0010: 55 23 b5 86 de 7f 66 f7 ff 02 00 00 00 00 00 00 
+15:58:35.841645 [PDCP] [I] TX DRB1 SDU (encrypted)
+             0000: 80 00 60 00 00 00 00 08 3a ff fe 80 00 00 00 00 
+             0010: 00 00 55 23 b5 86 de 7f 66 f7 ff 02 00 00 00 00 
+15:58:35.841659 [RLC ] [I] DRB1 Tx SDU (50 B, tx_sdu_queue_len=1)
+             0000: 80 00 60 00 00 00 00 08 3a ff fe 80 00 00 00 00 
+             0010: 00 00 55 23 b5 86 de 7f 66 f7 ff 02 00 00 00 00 
+15:58:35.843640 [PHY1] [I] [ 8022] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.846741 [PHY0] [I] [ 8025] PDCCH: cc=0, f=0, cce=16, L=2, riv=702, mcs=15, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=13.1 dB
+15:58:35.846757 [MAC ] [I] [ 8025] BSR:   Type Regular, Format Long, Value=36,0,53,0
+15:58:35.846782 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 5, N_nack = 0
+15:58:35.846791 [RLC ] [I] SRB1 Tx PDU SN=5 (9 B)
+             0000: a0 05 05 10 00 d6 52 a1 ce 
+15:58:35.846801 [RLC ] [I] SRB2 Tx PDU SN=0 (23 B)
+             0000: a0 00 00 48 01 a4 e2 85 a2 20 40 20 e8 60 00 6a 
+             0010: 40 18 40 55 b4 4d 32 
+15:58:35.846812 [RLC ] [I] DRB1 Tx PDU SN=0 (52 B)
+             0000: 00 00 80 00 60 00 00 00 00 08 3a ff fe 80 00 00 
+             0010: 00 00 00 00 55 23 b5 86 de 7f 66 f7 ff 02 00 00 
+15:58:35.846820 [MAC ] [I] [ 8025] UL 5:  New TX, RV=0, TBS=533
+15:58:35.847092 [PHY0] [I] [ 8025] PUSCH: cc=0, tti_tx=8029, rnti=0x46, rb=(2,16), nof_re=2160, tbs=533, mod=4, rv=0
+15:58:35.854543 [PHY0] [I] [ 8033] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.855700 [PHY1] [I] [ 8034] PDCCH: cc=0, f=1, cce=16, L=2, rbg=0x10000, pid=0, mcs={0}, ndi={1}, tpc_pucch=1, snr=13.1 dB
+15:58:35.855772 [PHY1] [I] [ 8034] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={7}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=13.1 dB
+15:58:35.855787 [MAC ] [I] [ 8034] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=1
+15:58:35.855801 [MAC ] [I] [ 8034] Delivering PDU for lcid=1, 2 bytes
+15:58:35.855810 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 18 
+15:58:35.855827 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 6, N_nack = 0
+15:58:35.855896 [PHY1] [I] [ 8034] PUCCH: cc=0, tti_tx=8038, rnti=0x46, f=1a, n_pucch=28, ack=1
+15:58:35.856543 [PHY0] [I] [ 8035] PDCCH: cc=0, f=1, cce=16, L=2, rbg=0x10000, pid=1, mcs={0}, ndi={0}, tpc_pucch=1, snr=12.6 dB
+15:58:35.856562 [PHY0] [I] [ 8035] PDCCH: cc=0, f=0, cce=20, L=2, riv=347, mcs=16, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.6 dB
+15:58:35.856590 [PHY0] [I] [ 8035] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={7}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=12.6 dB
+15:58:35.856602 [MAC ] [I] [ 8035] DL 1 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=0
+15:58:35.856613 [MAC ] [I] [ 8035] Delivering PDU for lcid=2, 2 bytes
+15:58:35.856622 [MAC ] [I] [ 8035] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.856620 [RLC ] [I] SRB2 Rx control PDU
+             0000: 00 04 
+15:58:35.856630 [MAC ] [I] [ 8035] UL 7:  New TX, RV=0, TBS=1692
+15:58:35.856634 [RLC ] [I] SRB2 Rx Status PDU: ACK_SN = 1, N_nack = 0
+15:58:35.856830 [PHY0] [I] [ 8035] PUSCH: cc=0, tti_tx=8039, rnti=0x46, rb=(2,46), nof_re=6480, tbs=1692, mod=4, rv=0, ack=1
+15:58:35.857574 [PHY1] [I] [ 8036] PDCCH: cc=0, f=0, cce=24, L=2, riv=347, mcs=16, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=14.1 dB
+15:58:35.857617 [MAC ] [I] [ 8036] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.857627 [MAC ] [I] [ 8036] UL 0:  New TX, RV=0, TBS=1692
+15:58:35.857905 [PHY1] [I] [ 8036] PUSCH: cc=0, tti_tx=8040, rnti=0x46, rb=(2,46), nof_re=6480, tbs=1692, mod=4, rv=0, cqi=6
+15:58:35.858727 [PHY0] [I] [ 8037] PDCCH: cc=0, f=0, cce=24, L=2, riv=591, mcs=16, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.7 dB
+15:58:35.858758 [MAC ] [I] [ 8037] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.858769 [MAC ] [I] [ 8037] UL 1:  New TX, RV=0, TBS=1527
+15:58:35.859030 [PHY0] [I] [ 8037] PUSCH: cc=0, tti_tx=8041, rnti=0x46, rb=(8,47), nof_re=5760, tbs=1527, mod=4, rv=0, sr=no
+15:58:35.859589 [PHY1] [I] [ 8038] PDCCH: cc=0, f=0, cce=16, L=2, riv=347, mcs=16, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.3 dB
+15:58:35.859621 [MAC ] [I] [ 8038] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.859633 [MAC ] [I] [ 8038] UL 2:  New TX, RV=0, TBS=1692
+15:58:35.859908 [PHY1] [I] [ 8038] PUSCH: cc=0, tti_tx=8042, rnti=0x46, rb=(2,46), nof_re=6480, tbs=1692, mod=4, rv=0
+15:58:35.860638 [PHY0] [I] [ 8039] PDCCH: cc=0, f=0, cce= 4, L=2, riv=347, mcs=16, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.6 dB
+15:58:35.860673 [MAC ] [I] [ 8039] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.860683 [MAC ] [I] [ 8039] UL 3:  New TX, RV=0, TBS=1692
+15:58:35.860958 [PHY0] [I] [ 8039] PUSCH: cc=0, tti_tx=8043, rnti=0x46, rb=(2,46), nof_re=6480, tbs=1692, mod=4, rv=0
+15:58:35.861021 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.2 dBm.
+15:58:35.861706 [PHY1] [I] [ 8040] PDCCH: cc=0, f=0, cce=24, L=2, riv=347, mcs=16, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.8 dB
+15:58:35.861743 [MAC ] [I] [ 8040] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.861754 [MAC ] [I] [ 8040] UL 4:  New TX, RV=0, TBS=1692
+15:58:35.862008 [PHY1] [I] [ 8040] PUSCH: cc=0, tti_tx=8044, rnti=0x46, rb=(2,46), nof_re=6480, tbs=1692, mod=4, rv=0
+15:58:35.862577 [PHY0] [I] [ 8041] PDCCH: cc=0, f=0, cce= 4, L=2, riv=347, mcs=16, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.2 dB
+15:58:35.862600 [MAC ] [I] [ 8041] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.862607 [MAC ] [I] [ 8041] UL 5:  New TX, RV=0, TBS=1692
+15:58:35.862823 [PHY0] [I] [ 8041] PUSCH: cc=0, tti_tx=8045, rnti=0x46, rb=(2,46), nof_re=6480, tbs=1692, mod=4, rv=0
+15:58:35.863631 [PHY1] [I] [ 8042] PDCCH: cc=0, f=0, cce=36, L=2, riv=347, mcs=16, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=11.7 dB
+15:58:35.863664 [MAC ] [I] [ 8042] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:35.863671 [MAC ] [I] [ 8042] UL 6:  New TX, RV=0, TBS=1692
+15:58:35.863908 [PHY1] [I] [ 8042] PUSCH: cc=0, tti_tx=8046, rnti=0x46, rb=(2,46), nof_re=6480, tbs=1692, mod=4, rv=0
+15:58:35.864699 [PHY0] [I] [ 8043] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.865512 [PHY1] [I] [ 8044] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.866733 [PHY0] [I] [ 8045] PHICH: hi=1, corr=0.9, I_lowest=8, n_dmrs=0, I_phich=0
+15:58:35.867632 [PHY1] [I] [ 8046] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.868595 [PHY0] [I] [ 8047] PHICH: hi=1, corr=0.8, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.869576 [PHY1] [I] [ 8048] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.870511 [PHY0] [I] [ 8049] PHICH: hi=1, corr=0.8, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.871549 [PHY1] [I] [ 8050] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:35.880622 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:35.897667 [PHY1] [I] [ 8076] PUCCH: cc=0, tti_tx=8080, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.900680 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.4 dBm.
+15:58:35.920663 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.5 dBm.
+15:58:35.937694 [PHY1] [I] [ 8116] PUCCH: cc=0, tti_tx=8120, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.940696 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.6 dBm.
+15:58:35.960700 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:35.977751 [PHY1] [I] [ 8156] PUCCH: cc=0, tti_tx=8160, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:35.980770 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:36.000706 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:36.017766 [PHY1] [I] [ 8196] PUCCH: cc=0, tti_tx=8200, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.020746 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.8 dBm.
+15:58:36.040521 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.8 dBm.
+15:58:36.041621 [PHY1] [I] [ 8220] PDCCH: cc=0, f=1, cce=24, L=2, rbg=0x18000, pid=0, mcs={5}, ndi={0}, tpc_pucch=1, snr=12.2 dB
+15:58:36.041724 [PHY1] [I] [ 8220] PDSCH: cc=0, rnti=0x46, nof_prb=6, nof_re=756, tbs={63}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=12.2 dB
+15:58:36.041734 [MAC ] [I] [ 8220] DL 0 (TB 0):  newTX tbs=63, rv=0, ack=OK, ndi=0
+15:58:36.041832 [MAC ] [I] [ 8220] Delivering PDU for lcid=2, 54 bytes
+15:58:36.041866 [RLC ] [I] SRB2 Rx data PDU SN=0 (52 B)
+             0000: 00 08 01 59 3a 8b fa 85 e0 10 3b 0a 18 c4 16 9d 
+             0010: bc cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee 
+15:58:36.041884 [RLC ] [I] SRB2 Status packet requested through polling bit
+15:58:36.041888 [RLC ] [I] SRB2 Rx SDU (52 B)
+             0000: 00 08 01 59 3a 8b fa 85 e0 10 3b 0a 18 c4 16 9d 
+             0010: bc cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee 
+15:58:36.041894 [PDCP] [I] RX SRB2 PDU (52 B), do_integrity = true, do_encryption = true
+             0000: 00 08 01 59 3a 8b fa 85 e0 10 3b 0a 18 c4 16 9d 
+             0010: bc cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee 
+15:58:36.041922 [PDCP] [I] RX SRB2 PDU (decrypted)
+             0000: 00 08 01 59 3a 8b fa 85 e0 10 3b 0a 18 c4 16 9d 
+             0010: bc cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee 
+15:58:36.041929 [PDCP] [I] MAC match
+             0000: 79 98 f7 2d 
+15:58:36.041931 [PHY1] [I] [ 8220] PUCCH: cc=0, tti_tx=8224, rnti=0x46, f=1a, n_pucch=36, ack=1
+15:58:36.041933 [PDCP] [I] RX SRB2 PDU SN: 0
+             0000: 08 01 59 3a 8b fa 85 e0 10 3b 0a 18 c4 16 9d bc 
+             0010: cb f0 7e 5e 59 03 4c c4 e3 f4 1d 37 c9 cd ee e4 
+15:58:36.042602 [MAC ] [I] [ 8221] SR:    Starting Procedure. dsrTransMax=64
+15:58:36.042616 [MAC ] [I] [ 8221] SR:    Signalling PHY sr_counter=1
+15:58:36.042651 [RRC ] [I] SRB2 - Rx dlInformationTransfer (47 B)
+15:58:36.042662 [NAS ] [I] DL SRB2 PDU
+             0000: 27 51 7f 50 bc 02 07 61 43 18 82 d3 b7 99 7e 0f 
+             0010: cb cb 20 69 98 9c 7e 83 a6 f9 39 bd dc 9e 83 98 
+15:58:36.042830 [NAS ] [I] Integrity check ok. Local: count=2, Received: count=2
+15:58:36.042838 [NAS ] [I] DL SRB2 Decrypted PDU
+             0000: 27 51 7f 50 bc 02 07 61 43 18 82 d3 b7 99 7e 0f 
+             0010: cb cb 20 69 98 9c 7e 83 a6 f9 39 bd dc 9e 83 98 
+15:58:36.042846 [NAS ] [I] Received EMM Information: Software Radio Systems LTE (srsLTE)
+15:58:36.057728 [PHY1] [I] [ 8236] PUCCH: cc=0, tti_tx=8240, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.058663 [PHY0] [I] [ 8237] PUCCH: cc=0, tti_tx=8241, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:36.060544 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.9 dBm.
+15:58:36.066701 [PHY0] [I] [ 8245] PDCCH: cc=0, f=0, cce=16, L=2, riv=852, mcs=13, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=11.9 dB
+15:58:36.066717 [MAC ] [I] [ 8245] BSR:   Type Regular, Format Short, Value=2,0,0,0
+15:58:36.066766 [RLC ] [I] SRB2 Tx status PDU - ACK_SN = 1, N_nack = 0
+15:58:36.066792 [MAC ] [I] [ 8245] UL 1:  New TX, RV=0, TBS=517
+15:58:36.066950 [PHY0] [I] [ 8245] PUSCH: cc=0, tti_tx=8249, rnti=0x46, rb=(2,19), nof_re=2592, tbs=517, mod=4, rv=0
+15:58:36.074513 [PHY0] [I] [ 8253] PHICH: hi=1, corr=0.9, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:36.075538 [PHY1] [I] [ 8254] PDCCH: cc=0, f=0, cce=16, L=2, riv=52, mcs=8, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=12.1 dB
+15:58:36.075583 [MAC ] [I] [ 8254] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:36.075589 [MAC ] [I] [ 8254] UL 2:  New TX, RV=0, TBS=32
+15:58:36.075703 [PHY1] [I] [ 8254] PUSCH: cc=0, tti_tx=8258, rnti=0x46, rb=(2,3), nof_re=288, tbs=32, mod=2, rv=0
+15:58:36.080557 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:36.083481 [PHY1] [I] [ 8262] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:36.097548 [PHY1] [I] [ 8276] PUCCH: cc=0, tti_tx=8280, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.100571 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:36.120572 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:36.137564 [PHY1] [I] [ 8316] PUCCH: cc=0, tti_tx=8320, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.140584 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:36.153549 [MAC ] [I] [ 8332] BSR:   triggered_bsr_type=3, LCID QUEUE status: 0: 0 1: 0 2: 0 3: 0 
+15:58:36.160611 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.6 dBm.
+15:58:36.177645 [PHY1] [I] [ 8356] PUCCH: cc=0, tti_tx=8360, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.180644 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.6 dBm.
+15:58:36.200652 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.5 dBm.
+15:58:36.217592 [PHY1] [I] [ 8396] PUCCH: cc=0, tti_tx=8400, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.220619 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.5 dBm.
+15:58:36.240673 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.4 dBm.
+15:58:36.257611 [PHY1] [I] [ 8436] PUCCH: cc=0, tti_tx=8440, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.260642 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.4 dBm.
+15:58:36.280737 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.297805 [PHY1] [I] [ 8476] PUCCH: cc=0, tti_tx=8480, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.300714 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.320719 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.4 dBm.
+15:58:36.337730 [PHY1] [I] [ 8516] PUCCH: cc=0, tti_tx=8520, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.340702 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.360714 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.377722 [PHY1] [I] [ 8556] PUCCH: cc=0, tti_tx=8560, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.380530 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.400539 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.417643 [PHY1] [I] [ 8596] PUCCH: cc=0, tti_tx=8600, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.420554 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.440605 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:36.457562 [PHY1] [I] [ 8636] PUCCH: cc=0, tti_tx=8640, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.460641 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.2 dBm.
+15:58:36.480599 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.2 dBm.
+15:58:36.497571 [PHY1] [I] [ 8676] PUCCH: cc=0, tti_tx=8680, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.500594 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.520599 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.537626 [PHY1] [I] [ 8716] PUCCH: cc=0, tti_tx=8720, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.540713 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.560624 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.577601 [PHY1] [I] [ 8756] PUCCH: cc=0, tti_tx=8760, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.580644 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.594637 [MAC ] [I] [ 8773] DL retx: 0.00 %, perpkt: 1.00, UL retx: 0.00 % perpkt: 0.00
+15:58:36.594695 [RLC ] [I] LCID=0, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:36.594724 [RLC ] [I] LCID=1, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:36.594728 [RLC ] [I] LCID=2, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:36.594751 [RLC ] [I] LCID=3, RX throughput: 0.000000 Mbps. TX throughput: 0.000416 Mbps.
+15:58:36.594762 [GW  ] [I] RX throughput: 0.000000 Mbps. TX throughput: 0.000384 Mbps.
+15:58:36.600644 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.617641 [PHY1] [I] [ 8796] PUCCH: cc=0, tti_tx=8800, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.620747 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.640726 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.657694 [PHY1] [I] [ 8836] PUCCH: cc=0, tti_tx=8840, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.660837 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.680709 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.697808 [PHY1] [I] [ 8876] PUCCH: cc=0, tti_tx=8880, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.700707 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.720546 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.737643 [PHY1] [I] [ 8916] PUCCH: cc=0, tti_tx=8920, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.740552 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.760573 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.777626 [PHY1] [I] [ 8956] PUCCH: cc=0, tti_tx=8960, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.780613 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.800629 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.817707 [PHY1] [I] [ 8996] PUCCH: cc=0, tti_tx=9000, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.820594 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.840590 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.857586 [PHY1] [I] [ 9036] PUCCH: cc=0, tti_tx=9040, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.860612 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:36.880619 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.0 dBm.
+15:58:36.897705 [PHY1] [I] [ 9076] PUCCH: cc=0, tti_tx=9080, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.900623 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.9 dBm.
+15:58:36.920669 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.8 dBm.
+15:58:36.937737 [PHY1] [I] [ 9116] PUCCH: cc=0, tti_tx=9120, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.940703 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.7 dBm.
+15:58:36.960740 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.7 dBm.
+15:58:36.977793 [PHY1] [I] [ 9156] PUCCH: cc=0, tti_tx=9160, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:36.980701 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.6 dBm.
+15:58:37.000734 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.6 dBm.
+15:58:37.017808 [PHY1] [I] [ 9196] PUCCH: cc=0, tti_tx=9200, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.020777 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.6 dBm.
+15:58:37.040692 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.5 dBm.
+15:58:37.057789 [PHY1] [I] [ 9236] PUCCH: cc=0, tti_tx=9240, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.060534 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.5 dBm.
+15:58:37.080541 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.4 dBm.
+15:58:37.097639 [PHY1] [I] [ 9276] PUCCH: cc=0, tti_tx=9280, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.100555 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.3 dBm.
+15:58:37.120578 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.3 dBm.
+15:58:37.137643 [PHY1] [I] [ 9316] PUCCH: cc=0, tti_tx=9320, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.140571 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.154470 [MAC ] [I] [ 9333] BSR:   triggered_bsr_type=3, LCID QUEUE status: 0: 0 1: 0 2: 0 3: 0 
+15:58:37.160579 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.177638 [PHY1] [I] [ 9356] PUCCH: cc=0, tti_tx=9360, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.180647 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.0 dBm.
+15:58:37.200593 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.9 dBm.
+15:58:37.217665 [PHY1] [I] [ 9396] PUCCH: cc=0, tti_tx=9400, rnti=0x46, f=2, n_pucch=0, cqi=7
+15:58:37.220756 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.9 dBm.
+15:58:37.240617 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.9 dBm.
+15:58:37.257670 [PHY1] [I] [ 9436] PUCCH: cc=0, tti_tx=9440, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.260725 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.0 dBm.
+15:58:37.280694 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.0 dBm.
+15:58:37.297687 [PHY1] [I] [ 9476] PUCCH: cc=0, tti_tx=9480, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.300735 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.320702 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.337785 [PHY1] [I] [ 9516] PUCCH: cc=0, tti_tx=9520, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.340701 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.360767 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.377738 [PHY1] [I] [ 9556] PUCCH: cc=0, tti_tx=9560, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.380698 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.9 dBm.
+15:58:37.400539 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.8 dBm.
+15:58:37.417521 [PHY1] [I] [ 9596] PUCCH: cc=0, tti_tx=9600, rnti=0x46, f=2, n_pucch=0, cqi=7
+15:58:37.420552 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.440585 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.1 dBm.
+15:58:37.457691 [PHY1] [I] [ 9636] PUCCH: cc=0, tti_tx=9640, rnti=0x46, f=2, n_pucch=0, cqi=5
+15:58:37.460881 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-108.5 dBm.
+15:58:37.480857 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-111.1 dBm.
+15:58:37.497712 [PHY1] [I] [ 9676] PUCCH: cc=0, tti_tx=9680, rnti=0x46, f=2, n_pucch=0, cqi=4
+15:58:37.500590 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-110.0 dBm.
+15:58:37.520594 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.8 dBm.
+15:58:37.537579 [PHY1] [I] [ 9716] PUCCH: cc=0, tti_tx=9720, rnti=0x46, f=2, n_pucch=0, cqi=8
+15:58:37.540606 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-102.1 dBm.
+15:58:37.560633 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.9 dBm.
+15:58:37.577604 [PHY1] [I] [ 9756] PUCCH: cc=0, tti_tx=9760, rnti=0x46, f=2, n_pucch=0, cqi=9
+15:58:37.580629 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.6 dBm.
+15:58:37.594626 [MAC ] [I] [ 9773] DL retx: 0.00 %, perpkt: 0.00, UL retx: 0.00 % perpkt: 0.00
+15:58:37.594673 [RLC ] [I] LCID=0, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:37.594705 [RLC ] [I] LCID=1, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:37.594711 [RLC ] [I] LCID=2, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:37.594741 [RLC ] [I] LCID=3, RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:37.594747 [GW  ] [I] RX throughput: 0.000000 Mbps. TX throughput: 0.000000 Mbps.
+15:58:37.600689 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.4 dBm.
+15:58:37.617722 [PHY1] [I] [ 9796] PUCCH: cc=0, tti_tx=9800, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.620706 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.3 dBm.
+15:58:37.640748 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-108.3 dBm.
+15:58:37.657715 [PHY1] [I] [ 9836] PUCCH: cc=0, tti_tx=9840, rnti=0x46, f=2, n_pucch=0, cqi=6
+15:58:37.660747 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.7 dBm.
+15:58:37.680747 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-105.1 dBm.
+15:58:37.697721 [PHY1] [I] [ 9876] PUCCH: cc=0, tti_tx=9880, rnti=0x46, f=2, n_pucch=0, cqi=7
+15:58:37.700701 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.2 dBm.
+15:58:37.720694 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.9 dBm.
+15:58:37.737794 [PHY1] [I] [ 9916] PUCCH: cc=0, tti_tx=9920, rnti=0x46, f=2, n_pucch=0, cqi=9
+15:58:37.740552 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-100.8 dBm.
+15:58:37.760575 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-100.2 dBm.
+15:58:37.777625 [PHY1] [I] [ 9956] PUCCH: cc=0, tti_tx=9960, rnti=0x46, f=2, n_pucch=0, cqi=8
+15:58:37.780566 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.3 dBm.
+15:58:37.800578 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-102.1 dBm.
+15:58:37.817575 [PHY1] [I] [ 9996] PUCCH: cc=0, tti_tx=10000, rnti=0x46, f=2, n_pucch=0, cqi=8
+15:58:37.820576 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.7 dBm.
+15:58:37.840689 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.8 dBm.
+15:58:37.857587 [PHY1] [I] [10036] PUCCH: cc=0, tti_tx=10040, rnti=0x46, f=2, n_pucch=0, cqi=7
+15:58:37.860655 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.0 dBm.
+15:58:37.880701 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-102.9 dBm.
+15:58:37.897593 [PHY1] [I] [10076] PUCCH: cc=0, tti_tx=10080, rnti=0x46, f=2, n_pucch=0, cqi=7
+15:58:37.900947 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.2 dBm.
+15:58:37.921015 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-112.1 dBm.
+15:58:37.937620 [PHY1] [I] [10116] PUCCH: cc=0, tti_tx=10120, rnti=0x46, f=2, n_pucch=0, cqi=5
+15:58:37.940643 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-108.4 dBm.
+15:58:37.961087 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-111.9 dBm.
+15:58:37.977654 [PHY1] [I] [10156] PUCCH: cc=0, tti_tx=10160, rnti=0x46, f=2, n_pucch=0, cqi=3
+15:58:37.980803 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-111.4 dBm.
+15:58:38.001168 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-108.2 dBm.
+15:58:38.017797 [PHY1] [I] [10196] PUCCH: cc=0, tti_tx=10200, rnti=0x46, f=2, n_pucch=0, cqi=4
+15:58:38.020730 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-110.7 dBm.
+15:58:38.040703 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-102.3 dBm.
+15:58:38.057748 [PHY1] [I] [10236] PUCCH: cc=0, tti_tx=0, rnti=0x46, f=2, n_pucch=0, cqi=9
+15:58:38.060708 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.1 dBm.
+15:58:38.061442 [MAC ] [I] [    0] BSR:   triggered_bsr_type=3, LCID QUEUE status: 0: 0 1: 0 2: 0 3: 0 
+15:58:38.080595 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-97.8 dBm.
+15:58:38.097541 [PHY1] [I] [   36] PUCCH: cc=0, tti_tx=40, rnti=0x46, f=2, n_pucch=0, cqi=9
+15:58:38.100612 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.8 dBm.
+15:58:38.120559 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-102.4 dBm.
+15:58:38.130893 [NAS ] [I] Sending detach request with GUTI
+15:58:38.131089 [RRC ] [I] SRB2 - Tx ulInformationTransfer (24 B)
+15:58:38.131096 [PDCP] [I] TX SRB2 SDU, SN: 1, do_integrity = true, do_encryption = true
+             0000: 48 02 a4 e2 cd 40 fb 60 40 e8 a1 21 7e c0 1e 22 
+             0010: 00 00 23 41 6f 11 cb 40 
+15:58:38.131132 [PDCP] [I] TX SRB2 SDU (encrypted)
+             0000: 01 48 02 a4 e2 cd 40 fb 60 40 e8 a1 21 7e c0 1e 
+             0010: 22 00 00 23 41 6f 11 cb 40 28 97 7d c2 
+15:58:38.131141 [RLC ] [I] SRB2 Tx SDU (29 B, tx_sdu_queue_len=0)
+             0000: 01 48 02 a4 e2 cd 40 fb 60 40 e8 a1 21 7e c0 1e 
+             0010: 22 00 00 23 41 6f 11 cb 40 28 97 7d c2 
+15:58:38.131430 [MAC ] [I] [   70] SR:    Starting Procedure. dsrTransMax=64
+15:58:38.131441 [MAC ] [I] [   70] SR:    Signalling PHY sr_counter=1
+15:58:38.137621 [PHY1] [I] [   76] PUCCH: cc=0, tti_tx=80, rnti=0x46, f=2, n_pucch=0, cqi=9
+15:58:38.138644 [PHY0] [I] [   77] PUCCH: cc=0, tti_tx=81, rnti=0x46, f=1, n_pucch=0, sr=yes
+15:58:38.140567 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-100.8 dBm.
+15:58:38.146849 [PHY0] [I] [   85] PDCCH: cc=0, f=0, cce= 8, L=1, riv=702, mcs=15, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=17.1 dB
+15:58:38.146864 [MAC ] [I] [   85] BSR:   Type Regular, Format Short, Value=32,0,0,0
+15:58:38.146923 [RLC ] [I] SRB2 Tx PDU SN=1 (31 B)
+             0000: a0 01 01 48 02 a4 e2 cd 40 fb 60 40 e8 a1 21 7e 
+             0010: c0 1e 22 00 00 23 41 6f 11 cb 40 28 97 7d c2 
+15:58:38.146958 [MAC ] [I] [   85] UL 1:  New TX, RV=0, TBS=533
+15:58:38.147144 [PHY0] [I] [   85] PUSCH: cc=0, tti_tx=89, rnti=0x46, rb=(2,16), nof_re=2160, tbs=533, mod=4, rv=0
+15:58:38.154554 [PHY0] [I] [   93] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:38.156707 [PHY0] [I] [   95] PDCCH: cc=0, f=1, cce= 8, L=1, rbg=0x10000, pid=0, mcs={0}, ndi={1}, tpc_pucch=1, snr=17.4 dB
+15:58:38.156725 [PHY0] [I] [   95] PDCCH: cc=0, f=0, cce=10, L=1, riv=202, mcs=10, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, snr=17.4 dB
+15:58:38.156753 [PHY0] [I] [   95] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={7}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=17.4 dB
+15:58:38.156766 [MAC ] [I] [   95] DL 0 (TB 0):  newTX tbs=7, rv=0, ack=OK, ndi=1
+15:58:38.156786 [MAC ] [I] [   95] Delivering PDU for lcid=2, 2 bytes
+15:58:38.156795 [MAC ] [I] [   95] BSR:   Type Padding, Format Long, Value=0,0,0,0
+15:58:38.156800 [MAC ] [I] [   95] UL 3:  New TX, RV=0, TBS=109
+15:58:38.156798 [RLC ] [I] SRB2 Rx control PDU
+             0000: 00 08 
+15:58:38.156815 [RLC ] [I] SRB2 Rx Status PDU: ACK_SN = 2, N_nack = 0
+15:58:38.156891 [PHY0] [I] [   95] PUSCH: cc=0, tti_tx=99, rnti=0x46, rb=(2,6), nof_re=720, tbs=109, mod=2, rv=0, ack=1
+15:58:38.160539 [PHY0] [I] [   99] PDCCH: cc=0, f=1, cce=24, L=1, rbg=0x10000, pid=1, mcs={2}, ndi={1}, tpc_pucch=1, snr=16.9 dB
+15:58:38.160585 [PHY0] [I] [   99] PDSCH: cc=0, rnti=0x46, nof_prb=3, nof_re=378, tbs={18}, mod={2}, rv={0}, crc={OK}, it=0.5, snr=16.9 dB
+15:58:38.160596 [MAC ] [I] [   99] DL 1 (TB 0):  newTX tbs=18, rv=0, ack=OK, ndi=1
+15:58:38.160613 [MAC ] [I] [   99] Delivering PDU for lcid=2, 10 bytes
+15:58:38.160625 [RLC ] [I] SRB2 Rx data PDU SN=1 (8 B)
+             0000: 01 28 02 00 2f f2 3b a8 
+15:58:38.160642 [RLC ] [I] SRB2 Status packet requested through polling bit
+15:58:38.160648 [RLC ] [I] SRB2 Rx SDU (8 B)
+             0000: 01 28 02 00 2f f2 3b a8 
+15:58:38.160656 [PDCP] [I] RX SRB2 PDU (8 B), do_integrity = true, do_encryption = true
+             0000: 01 28 02 00 2f f2 3b a8 
+15:58:38.160662 [PDCP] [I] RX SRB2 PDU (decrypted)
+             0000: 01 28 02 00 2f f2 3b a8 
+15:58:38.160669 [PDCP] [I] MAC match
+             0000: 2f f2 3b a8 
+15:58:38.160680 [PDCP] [I] RX SRB2 PDU SN: 1
+             0000: 28 02 00 
+15:58:38.160681 [PHY0] [I] [   99] PUCCH: cc=0, tti_tx=103, rnti=0x46, f=1a, n_pucch=36, ack=1
+15:58:38.160722 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.9 dBm.
+15:58:38.161499 [MAC ] [I] [  100] SR:    Starting Procedure. dsrTransMax=64
+15:58:38.161509 [MAC ] [I] [  100] SR:    Signalling PHY sr_counter=1
+15:58:38.161521 [RRC ] [I] SRB2 - Rx rrcConnectionRelease (3 B)
+15:58:38.161648 [RRC ] [I] Proc "Go Idle" - Starting...
+15:58:38.162578 [RRC ] [I] Leaving RRC_CONNECTED state
+15:58:38.162607 [RLC ] [I] Added radio bearer SRB0 in Transparent Mode
+15:58:38.162613 [RLC ] [I] Configured radio bearer SRB0 in Transparent Mode
+15:58:38.162616 [MAC ] [I] [  101] Resetting MAC
+15:58:38.162621 [RRC ] [I] Setting default PHY config dedicated
+15:58:38.162724 [PHY0] [I] [  101] Setting configuration for cc_worker=0, cc=0
+15:58:38.162734 [PHY1] [I] [  100] Setting configuration for cc_worker=1, cc=0
+15:58:38.162741 [PHY2] [I] [    0] Setting configuration for cc_worker=2, cc=0
+15:58:38.162750 [MAC ] [I] [  101] BSR:   Configured timer periodic 20 ms
+15:58:38.162754 [MAC ] [I] [  101] BSR:   Configured timer reTX 320 ms
+15:58:38.162760 [MAC ] [I] [  101] PHR:   Configured timer periodic 50 ms
+15:58:38.164710 [PHY0] [I] [  103] PHICH: hi=1, corr=1.0, I_lowest=2, n_dmrs=0, I_phich=0
+15:58:38.164890 [MAC ] [I] [  101] Logical Channel Setup: LCID=0, LCG=0, priority=0, PBR=-1, BSD=50ms, bucket_size=0
+15:58:38.164905 [MAC ] [I] [  101] Logical Channel Setup: LCID=1, LCG=0, priority=1, PBR=-1, BSD=50ms, bucket_size=0
+15:58:38.164920 [PHY0] [I] [  103] Resetting PHY
+15:58:38.164926 [PHY0] [I] [  103] Applying time_adv_sec=0.0 us, next_offset=6
+15:58:38.164936 [PHY0] [I] [  103] Setting configuration for cc_worker=0, cc=0
+15:58:38.164941 [PHY1] [I] [  102] Setting configuration for cc_worker=1, cc=0
+15:58:38.164944 [PHY2] [I] [    0] Setting configuration for cc_worker=2, cc=0
+15:58:38.164949 [RRC ] [I] Set MAC default configuration
+15:58:38.164955 [MAC ] [I] [  101] BSR:   Configured timer reTX 2560 ms
+15:58:38.164961 [RRC ] [I] Set MAC main config: harq-MaxReTX=5, bsr-TimerReTX=2560, bsr-TimerPeriodic=-1
+15:58:38.164965 [RRC ] [I] Going RRC_IDLE
+15:58:38.180549 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.4 dBm.
+15:58:38.200662 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-100.8 dBm.
+15:58:38.220682 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.7 dBm.
+15:58:38.240767 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.3 dBm.
+15:58:38.260720 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.1 dBm.
+15:58:38.280717 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.0 dBm.
+15:58:38.300727 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-99.5 dBm.
+15:58:38.320760 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-101.0 dBm.
+15:58:38.340850 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-102.7 dBm.
+15:58:38.360702 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.2 dBm.
+15:58:38.380803 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.2 dBm.
+15:58:38.400837 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-103.5 dBm.
+15:58:38.420537 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.0 dBm.
+15:58:38.440540 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-104.9 dBm.
+15:58:38.460576 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.2 dBm.
+15:58:38.480586 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-107.2 dBm.
+15:58:38.500597 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-107.9 dBm.
+15:58:38.520605 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-108.2 dBm.
+15:58:38.540610 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-108.1 dBm.
+15:58:38.560669 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-107.4 dBm.
+15:58:38.580635 [RRC ] [I] MEAS:  New measurement earfcn=-1, pci=1 (serving), rsrp=-106.4 dBm.
+15:58:38.594840 [NAS ] [I] Saved GUTI to file m_tmsi: b788e5a, mcc: 1, mnc: 1, mme_group_id: 1, mme_code: 1a
+15:58:38.594857 [NAS ] [I] Saved security ctxt to file .ctxt. ksi: 0, k_asme: c593e4f24fdec45801d19df8c62473dd013e3e7da6fac8d7c427a3afb19b6e92, tx_count: 3, rx_count: 3, int_alg: 1, enc_alg: 0
+Closing log
