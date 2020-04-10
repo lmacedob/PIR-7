@@ -3,20 +3,37 @@ import sys
 import outilParser
 
 if __name__ == "__main__":
-    file = sys.argv[1]      #source file
-    keyword = sys.argv[2]   #keyword to do the text treatment
+    try:
+        file = sys.argv[1]      #source file
+        keywords = sys.argv[2:]  #keywords necessary to do the text treatment
+    except IndexError:
+        raise SystemExit("Usage : {sysargv[0]} file to treat ;  {sys.argv[2:]} keywords")
+
+    print("\n")
 
     #Let's get the lines from the log that interest us,
     #using the keyword to extract only the lines containing it
     #As a result, we have a list containing the interesting lines
-    lines = outilParser.from_file(file, keyword)
+    lines = outilParser.select_lines(file, keywords)
+
+    #Latency test...not working (10th april 2020)
+    #lat_test = outilParser.get_latency(str(lines[0]),str(lines[1]))
+    #print(lat_test)
+
 
     #We convert that list of lines into a string
-    lines_text = outilParser.show(lines, keyword)
+    lines_text = outilParser.show(lines, keywords)
     print(lines_text)  #print for debugging
+    #print("\n")
+
+    #We output the total number of lines only, and not all the content
+    #print(outilParser.show_nbLines(lines, keywords))
+
 
     #Creation of a new text file, let's call it result.txt
     #We will push to this file all the recovered lines
     text_file = open("result.txt", 'wt')
     n = text_file.write(lines_text)
-    text_file.close() #Don't forget to close the file
+
+    #Don't forget to close the file
+    text_file.close()
