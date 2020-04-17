@@ -1,6 +1,6 @@
 #-*-coding: utf8-*-
 import time
-import datetime
+from datetime import datetime
 
 #brief : gets and filters specific lines from a given file using some keywords
 #parameters :   "filename" -> filename (located in the same folder as this script)
@@ -17,6 +17,8 @@ def select_lines(filename, keywords):
                     count += 1
                     fir = line.split("\n")
                     res.append(fir[0])
+                    break
+
     my_file.close()
     return res
 
@@ -49,12 +51,12 @@ def show_nbLines(list, keywords):
 #parameters : "line1" and "line2" are the selected lines
 #return : int - latency
 def get_latency(line1, line2):
+    FMT = '%H:%M:%S.%f'
     recovered1 = get_time(line1)                        #Problems getting the latency !!!!
     recovered2 = get_time(line2)
-    t1 = time.strptime(recovered1, "%H:%M:%S.%f")
-    print(t1)
-    t2 = time.strptime(recovered2, "%H:%M:%S.%f")
-    res = datetime.timedelta(t2,t1)
+    t1 = datetime.strptime(recovered1, FMT)
+    t2 = datetime.strptime(recovered2, FMT)
+    res = t2 - t1
     return res
 
 

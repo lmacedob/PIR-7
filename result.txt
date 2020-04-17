@@ -1,4 +1,17 @@
-Total number of lines including the keywords  ['Attach Request']  -> 2
+Total number of lines including the keywords  ['Attach', 'Request']  -> 15
 ---------------------------------------------------------------------------
 15:58:34.596066 [NAS ] [I] Attach Request
+15:58:35.208611 [NAS ] [I] Generating PDN Connectivity Request
+15:58:35.208616 [NAS ] [I] Requesting GUTI attach. m_tmsi: 195273fe, mcc: 1, mnc: 1, mme_group_id: 1, mme_code: 1a
+15:58:35.208828 [RRC ] [I] Proc "Connection Request" - Initiation of Connection establishment procedure
+15:58:35.208835 [RRC ] [I] Proc "Cell Selection" - Completed with success. Informing proc Connection Request
+15:58:35.208898 [RRC ] [I] Proc "Connection Request" - Configuring serving cell...
+15:58:35.352540 [RRC ] [I] SRB0 - Tx rrcConnectionRequest (6 B)
+15:58:35.352557 [RRC ] [I] Proc "Connection Request" - Waiting for RRCConnectionSetup/Reject or expiry
+15:58:35.416593 [RRC ] [I] Proc "Connection Request" - Finished connection request procedure successfully.
+15:58:35.416604 [NAS ] [I] Proc "RRC Connect" - Connection established correctly. Waiting for Attach
+15:58:35.756700 [NAS ] [I] Received Identity Request. ID type: 1
+15:58:35.776756 [NAS ] [I] Received Authentication Request
+15:58:35.836827 [NAS ] [I] Received Attach Accept
+15:58:35.841465 [NAS ] [I] Sending Attach Complete
 15:58:35.841548 [NAS ] [I] Attach Request from PLMN Search finished successfully

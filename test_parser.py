@@ -7,8 +7,10 @@ if __name__ == "__main__":
         file = sys.argv[1]      #source file
         keywords = sys.argv[2:]  #keywords necessary to do the text treatment
     except IndexError:
-        raise SystemExit("Usage : {sysargv[0]} file to treat ;  {sys.argv[2:]} keywords")
+        raise SystemExit("Usage : {sysargv[1]} file to treat ;  {sys.argv[2:]} keywords")
 
+    print("\n")
+    print("Keywords: {0}".format(keywords))
     print("\n")
 
     #Let's get the lines from the log that interest us,
@@ -17,8 +19,11 @@ if __name__ == "__main__":
     lines = outilParser.select_lines(file, keywords)
 
     #Latency test...not working (10th april 2020)
-    #lat_test = outilParser.get_latency(str(lines[0]),str(lines[1]))
-    #print(lat_test)
+    lat_test = outilParser.get_latency(str(lines[0]),str(lines[-1]))
+    #print(outilParser.get_time(str(lines[0])))
+    print("Latency test between \n {0} \n and \n {1} \n = {2} s".format(str(lines[0]),str(lines[-1]),lat_test))
+
+    print("\n")
 
 
     #We convert that list of lines into a string
