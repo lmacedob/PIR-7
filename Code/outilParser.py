@@ -26,7 +26,7 @@ def select_lines(filename, keywords):
 #parameters :   "list" -> a list of the filtered lines
 #                "keywords" -> the keywords
 #return : string - total number of lines and the lines
-def show(list, keywords):
+def toString(list, keywords):
     count = len(list)
     res = "Total number of lines including the keywords  {}  -> {}".format(keywords, count)
     res += "\n---------------------------------------------------------------------------\n"
@@ -38,13 +38,13 @@ def show(list, keywords):
 #parameters :   "list" -> a list of the filtered lines
 #                "keywords" -> the keywords
 #return : string - total number of lines
-def show_nbLines(list, keywords):
+def showOnly_nbLines(list, keywords):
     count = len(list)
     k = ""
     if len(list)>1:
-        for _ in range(len(keywords)): k += keywords[_]
+        for _ in range(len(keywords)): k += keywords[_] + ", "
     else: k = keywords[0]
-    return "Total number of lines including the keyword(s) \" {} \" -> {} \n".format(k, count)
+    return "Total # of lines including the keyword(s) \" {} \" -> {} ".format(k, count)
 
 
 #brief : methode to get the latency between two specific lines
@@ -52,7 +52,7 @@ def show_nbLines(list, keywords):
 #return : int - latency
 def get_latency(line1, line2):
     FMT = '%H:%M:%S.%f'
-    recovered1 = get_time(line1)                        #Problems getting the latency !!!!
+    recovered1 = get_time(line1)
     recovered2 = get_time(line2)
     t1 = datetime.strptime(recovered1, FMT)
     t2 = datetime.strptime(recovered2, FMT)
@@ -63,7 +63,7 @@ def get_latency(line1, line2):
 #brief : methode to get the time stamp
 #parameters : "l" is a single line
 #return : int - the time stamp
-def get_time(l):
-    parsed = l.split(" ", 1)
-    ok = parsed[0].strip('[\'')
-    return ok
+def get_time(line):
+    parsed = line.split(" ", 1)
+    res = parsed[0].strip('[\'')
+    return res
