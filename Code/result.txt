@@ -1,5 +1,7 @@
-Total number of lines including the keywords  ['RRC Connect']  -> 3
+Total number of lines including the keywords  ['Attach']  -> 5
 ---------------------------------------------------------------------------
-15:58:35.208798 [NAS ] [I] Proc "RRC Connect" - Starting...
+15:58:34.596066 [NAS ] [I] Attach Request
 15:58:35.416604 [NAS ] [I] Proc "RRC Connect" - Connection established correctly. Waiting for Attach
-15:58:35.841536 [NAS ] [I] Proc "RRC Connect" - Success: EMM Registered correctly.
+15:58:35.836827 [NAS ] [I] Received Attach Accept
+15:58:35.841465 [NAS ] [I] Sending Attach Complete
+15:58:35.841548 [NAS ] [I] Attach Request from PLMN Search finished successfully

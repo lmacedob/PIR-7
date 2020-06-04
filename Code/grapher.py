@@ -7,26 +7,30 @@ import plotly.graph_objects as go
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-ticks_pos = [*range(100,0,-1)]
-ticks_lbl = [*range(0,201)]
+top_value = 201
+bottom_value = 0
+
+ticks_pos = [*range(top_value,bottom_value,-1)]
+ticks_lbl = [*range(bottom_value,top_value)]
 
 
 fig = go.Figure(data=
     go.Parcoords(name = "Attachment",
-        line_color='red',
+        line_color='blue',
         dimensions = list([
             dict( label = 'UE',
-                range = [-100,100],
-                values = [100,98,95,91,86,80,73,65],              #Values are necessary
+                range = [bottom_value,top_value],
+                values = [200,198,95,91,86,80,73,65],              #Values are necessarys
+
                 tickvals = ticks_pos,
                 ticktext = ticks_lbl
-                #tickvals = [100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77],
-                #ticktext = ticks_lbl
-                #ticktext = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
+
+
+
             ),
             dict( label = 'eNodeB',
-                range = [-100,100],
-                values = [100,98,95,91,86,80,73,65],
+                range = [bottom_value,top_value],
+                values = [200,198,95,91,86,80,73,65],
                 #values = [95,90,75],
                 tickvals = ticks_pos,
                 ticktext = ticks_lbl
@@ -34,8 +38,8 @@ fig = go.Figure(data=
                 #ticktext = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]    #Sets the text displayed at the ticks position via `tickvals`
             ),
             dict( label = 'Coeur Reseau',
-                range = [-100,100],
-                values = [100,98,95,91,86,80,73,65],
+                range = [bottom_value,top_value],
+                values = [200,198,95,91,86,80,73,65],
                 #values = [90,85,80],              #Values are necessary
                 tickvals = ticks_pos,
                 ticktext = ticks_lbl
@@ -49,7 +53,7 @@ fig = go.Figure(data=
 fig.update_layout(
     autosize=False,
     width=1300,
-    height=5000,
+    height=3500,
     margin=dict(
         l=200,
         r=200,
@@ -57,7 +61,7 @@ fig.update_layout(
         t=100,
         pad=4
     ),
-    paper_bgcolor="LightGray",
+    paper_bgcolor="azure",
 )
 
 fig.update_yaxes(automargin=True)
