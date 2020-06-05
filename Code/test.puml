@@ -1,24 +1,10 @@
 @startuml
-Alice -> Bob: Authentication Request
-
-alt successful case
-
-    Bob -> Alice: Authentication Accepted
-
-else some kind of failure
-
-    Bob -> Alice: Authentication Failure
-    group My own label
-    Alice -> Log : Log attack start
-        loop 1000 times
-            Alice -> Bob: DNS Attack
-        end
-    Alice -> Log : Log attack end
-    end
-
-else Another type of failure
-
-   Bob -> Alice: Please repeat
-
-end
+title Attach Sequence
+[-> UE: 0.0988 ms start
+UE -> eNodeB: Attach Request
+eNodeB -> MME: Attach Request
+MME ->]: 0.0993 ms Received
+MME -> eNodeB: Attach Successful
+eNodeB -> UE: Attach Successful
+UE -> eNodeB:  Attach Request from PLMN Search finished successfully
 @enduml
