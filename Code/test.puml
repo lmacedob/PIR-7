@@ -6,5 +6,5 @@ eNodeB -> MME: Attach Request
 MME ->]: 0.0993 ms Received
 MME -> eNodeB: Attach Successful
 eNodeB -> UE: Attach Successful
-UE -> eNodeB:  Attach Request from PLMN Search finished successfully
+UE -> MME:  Attach Request from PLMN Search finished successfully
 @enduml

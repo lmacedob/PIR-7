@@ -1,7 +1,9 @@
-Total number of lines including the keywords  ['Attach']  -> 5
+Total number of lines including the keywords  ['SRB1 - Tx rrcConnectionSetupComplete', 'SRB1 - Rx dlInformationTransfer', 'SRB1 - Tx ulInformationTransfer', 'SRB1 - Rx dlInformationTransfer']  -> 7
 ---------------------------------------------------------------------------
-15:58:34.596066 [NAS ] [I] Attach Request
-15:58:35.416604 [NAS ] [I] Proc "RRC Connect" - Connection established correctly. Waiting for Attach
-15:58:35.836827 [NAS ] [I] Received Attach Accept
-15:58:35.841465 [NAS ] [I] Sending Attach Complete
-15:58:35.841548 [NAS ] [I] Attach Request from PLMN Search finished successfully
+15:58:35.415841 [RRC ] [I] SRB1 - Tx rrcConnectionSetupComplete (35 B)
+15:58:35.756656 [RRC ] [I] SRB1 - Rx dlInformationTransfer (7 B)
+15:58:35.756711 [RRC ] [I] SRB1 - Tx ulInformationTransfer (14 B)
+15:58:35.776684 [RRC ] [I] SRB1 - Rx dlInformationTransfer (40 B)
+15:58:35.776826 [RRC ] [I] SRB1 - Tx ulInformationTransfer (14 B)
+15:58:35.796625 [RRC ] [I] SRB1 - Rx dlInformationTransfer (17 B)
+15:58:35.797128 [RRC ] [I] SRB1 - Tx ulInformationTransfer (11 B)

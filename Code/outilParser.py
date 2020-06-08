@@ -1,6 +1,7 @@
 #-*-coding: utf8-*-
 import time
 from datetime import datetime
+import constants
 
 #brief : gets and filters specific lines from a given file using some keywords
 #parameters :   "filename" -> filename (located in the same folder as this script)
@@ -9,12 +10,10 @@ from datetime import datetime
 def select_lines(filename, keywords):
     """Cette methode recupere une ligne depuis un fichier texte"""
     res = list()
-    count = 0
     with open(filename, 'r') as my_file:
         for line in my_file:
             for word in keywords:
                 if word in line:
-                    count += 1
                     fir = line.split("\n")
                     res.append(fir[0])
                     break
@@ -66,4 +65,19 @@ def get_latency(line1, line2):
 def get_time(line):
     parsed = line.split(" ", 1)
     res = parsed[0].strip('[\'')
+    return res
+
+
+def select_procedure(key):
+    res = []
+    if 'Cell Search' in key:
+        res += constants.CELL_SEARCH
+    elif 'RRC Connection' in key:
+        res += constants.RRC_CONNECTION
+    elif 'Attach' in key:
+        res += constants.ATTACH_AND_AUTHENTICATION
+    elif 'Radio Bearer Setup' in key:
+        res += constants.DEFAULT_RADIO_BEARER_SETUP
+    elif 'All' in key:
+        res += constants.ALL
     return res
