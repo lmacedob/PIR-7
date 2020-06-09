@@ -14,24 +14,22 @@ if __name__ == "__main__":
     except IndexError:
         raise SystemExit("******ERROR : Parameters missing******\n Usage : {sysargv[1,2]} files to treat (.log) ;  {sys.argv[3:]} procedure")
 
-    print(procedure)
+    ####Get the procedure messages####
     keywords = outilParser.select_procedure(procedure)
 
-    #print("\n")
-    print("Keywords: {0}".format(keywords))
-    print("\n")
-
-    ##########Extraction of lines
+    ####Extraction of lines####
     #Let's get the lines from the log that interest us,
     #using the keyword to extract only the lines containing it
     #As a result, we have a list containing the interesting lines
-    lines_file_1 = outilParser.select_lines(file_1, keywords)
-    lines_file_2 = outilParser.select_lines(file_2,keywords)
-    lines_file_3 = outilParser.select_lines(file_3,keywords)
+    lines_file_1 = outilParser.select_lines(file_1, keywords, 1)    ##UE == 1
+    lines_file_2 = outilParser.select_lines(file_2,keywords, 2)     ##eNodeB == 2
+    lines_file_3 = outilParser.select_lines(file_3,keywords, 3)     ##EPC == 3
+
+
 
     lines_final = lines_file_1 + lines_file_2 + lines_file_3
 
-    #lines_final.sort()
+    lines_final.sort()
 
     ###########Latency test
     #lat_test = outilParser.get_latency(str(lines[1]),str(lines[-1]))
@@ -43,9 +41,11 @@ if __name__ == "__main__":
 
 
     #We convert that list of lines into a string
-    lines_text = outilParser.toString(lines_final, keywords)
-    print(lines_text)  #print for debugging
     print("\n")
+    #lines_text = outilParser.toString(lines_final)
+    lines_text = outilParser.toString_debug(lines_final, procedure)
+    print(lines_text)  #print for debugging
+    #print("\n")
 
     #We output the total number of lines only, and not all the content
     #print(outilParser.showOnly_nbLines(lines_final, keywords))

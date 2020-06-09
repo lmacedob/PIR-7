@@ -1,9 +1,11 @@
-Total number of lines including the keywords  ['SRB1 - Tx rrcConnectionSetupComplete', 'SRB1 - Rx dlInformationTransfer', 'SRB1 - Tx ulInformationTransfer', 'SRB1 - Rx dlInformationTransfer']  -> 7
+Total number of lines including the keywords  CELL SEarch  -> 9
 ---------------------------------------------------------------------------
-15:58:35.415841 [RRC ] [I] SRB1 - Tx rrcConnectionSetupComplete (35 B)
-15:58:35.756656 [RRC ] [I] SRB1 - Rx dlInformationTransfer (7 B)
-15:58:35.756711 [RRC ] [I] SRB1 - Tx ulInformationTransfer (14 B)
-15:58:35.776684 [RRC ] [I] SRB1 - Rx dlInformationTransfer (40 B)
-15:58:35.776826 [RRC ] [I] SRB1 - Tx ulInformationTransfer (14 B)
-15:58:35.796625 [RRC ] [I] SRB1 - Rx dlInformationTransfer (17 B)
-15:58:35.797128 [RRC ] [I] SRB1 - Tx ulInformationTransfer (11 B)
+15:37:42.973778 [RRC ] [D] SIB payload - Tx systemInformationBlockType1 (15 B)
+15:37:42.973872 [RRC ] [D] SIB payload - Tx systemInformation (27 B)
+15:37:42.974441 [S1AP] [I] Sending s1SetupRequest to MME
+15:37:42.975671 [S1AP] [I] Received S1SetupResponse
+15:58:35.112763 [RRC ] [I] BCCH-BCH - Rx MIB (3 B)
+15:58:35.206836 [RLC ] [I] BCCH TXSCH message received.
+15:58:35.207472 [RRC ] [I] BCCH-DLSCH - Rx systemInformationBlockType1 (18 B)
+15:58:35.350727 [RLC ] [I] BCCH TXSCH message received.
+15:58:35.351587 [RRC ] [I] BCCH-DLSCH - Rx systemInformation (28 B)
