@@ -1,0 +1,33 @@
+@startuml 
+header IBANEZ Israel, MACEDO Luis 
+title ALL
+participant UE
+participant eNodeB
+collections EPC
+eNodeB -> EPC: Identity Response
+EPC -> eNodeB: Authentication Request
+eNodeB -> EPC: Authentication Response
+EPC -> eNodeB: Security Mode Command
+eNodeB -> EPC: Security Mode Complete
+EPC -> eNodeB: Initial Context Setup Request
+UE -> eNodeB: Attach Complete
+eNodeB -> UE: MIB
+eNodeB -> UE: SIB1
+eNodeB -> UE: SIB2
+EPC -> eNodeB: S1 Setup Response
+EPC -> eNodeB: S1 Setup Response
+UE -> eNodeB: Connection Request
+eNodeB -> UE: Connection Setup
+UE -> eNodeB: Connection Setup Complete (Attach request)
+eNodeB -> UE: Identity Request
+eNodeB -> EPC: Authentication Response
+UE -> eNodeB: Identity Response
+eNodeB -> EPC: Authentication Response
+eNodeB -> UE: Security Mode Command
+UE -> eNodeB: Security Mode Complete
+eNodeB -> EPC: Initial Context Setup Response
+eNodeB -> UE: Connection Reconfiguration
+eNodeB -> UE: Identity Request
+eNodeB -> UE: Attach Accept
+eNodeB -> UE: Attach Accept
+@enduml

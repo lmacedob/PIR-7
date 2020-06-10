@@ -1,22 +1,30 @@
 #-*-coding, utf8-*-
 
-#####Lists of messages to filter from the logs#####
+
+#####A tuple for each entity containing the total number of messages for each select_procedure
+## Ex: UE tuple = (nb of msgs Cell search, nb of msgs RRC Connection, nb of msgs Attach,
+################   nb of msgs Default Radio Bearer, nb of mesgs Detach, total nb of msgs of the entity)
+TOTAL_LINES = [(3,3,6,7,1,20),(4,3,12,9,1,29),(2,0,7,4,1,15)]
+
+
+######Lists of messages to filter from the logs#####
 CELL_SEARCH = [('BCCH-BCH', 'MIB'),
                 ('BCCH-DLSCH - Rx systemInformationBlockType1', 'SIB1'),
                 ('BCCH-DLSCH - Rx systemInformation', 'SIB2'),
                 ('SIB payload - Tx systemInformationBlockType1', 'SIB1'),
                 ('SIB payload - Tx systemInformation', 'SIB2'),
-                ('Sending s1SetupRequest to MME', 'S1SetupRequest'),
-                ('Received S1AP PDU', 'S1SetupResponse'),
+                ('Sending s1SetupRequest to MME', 'S1 Setup Request'),
+                ('Received S1AP PDU', 'S1 Setup Response'),
                 ('Received S1 Setup Request', 'S1 Setup Request'),
-                ('Sending S1 Setup Response', 'Setup Response')
+                ('Sending S1 Setup Response', 'S1 Setup Response')
                 ]
 
 RRC_CONNECTION = [('SRB0 - Tx rrcConnectionRequest' , 'Connection Request'),
                 ('SRB0 - Rx rrcConnectionSetup' , 'Connection Setup'),
+                ('SRB1 - Tx rrcConnectionSetupComplete' , 'Connection Setup Complete (Attach request)'),
                 ('Rx rrcConnectionRequest' , 'Connection Request'),
                 ('Tx rrcConnectionSetup' , 'Connection Setup'),
-                ('SRB1 - Tx rrcConnectionSetupComplete' , 'Connection Setup Complete (Attach request)')
+                ('SRB1 - Rx rrcConnectionSetupComplete' , 'Connection Setup Complete (Attach request)')
                 ]
 
 ATTACH_AND_AUTHENTICATION = [('SRB1 - Rx dlInformationTransfer' , 'Identity Request'),
@@ -25,7 +33,7 @@ ATTACH_AND_AUTHENTICATION = [('SRB1 - Rx dlInformationTransfer' , 'Identity Requ
                 ('SRB1 - Tx ulInformationTransfer' , 'Authentication Response'),
                 ('SRB1 - Rx dlInformationTransfer' , 'Security Mode Command'),
                 ('SRB1 - Tx ulInformationTransfer' , 'Security Mode Complete'),
-                ('Sending InitialUEMessage for RNTI,' , 'InitialUEMessage'),
+                ('Sending InitialUEMessage for RNTI' , 'Initial UE Message (Attach Request)'),
                 ('Received S1AP PDU' , 'Identity Request'),
                 ('Tx dlInformationTransfer' , 'Identity Request'),
                 ('SRB1 - Rx ulInformationTransfer' , 'Identity Response'),
@@ -37,13 +45,13 @@ ATTACH_AND_AUTHENTICATION = [('SRB1 - Rx dlInformationTransfer' , 'Identity Requ
                 ('Received S1AP PDU' , 'Security Mode Command'),
                 ('Tx dlInformationTransfer', 'Security Mode Command'),
                 ('SRB1 - Rx ulInformationTransfer', 'Security Mode Complete'),
-                ('Received Initial UE Message' , 'Initial UE Message(Attach request)'),
-                ('Packing Identity Request' , 'Identity request'),
-                ('UL NAS: Received Identity Response' , 'Received Identity Response'),
+                ('Received Initial UE Message' , 'Initial UE Message (Attach Request)'),
+                ('Packing Identity Request' , 'Identity Request'),
+                ('UL NAS: Received Identity Response' , 'Identity Response'),
                 ('Packing Authentication Request' , 'Authentication Request'),
-                ('UL NAS: Received Authentication Response' , 'Received Authentication Response'),
+                ('UL NAS: Received Authentication Response' , 'Authentication Response'),
                 ('Packing Security Mode Command' , 'Security Mode Command'),
-                ('UL NAS: Received Security Mode Complete' , 'Received Security Mode Complete')
+                ('UL NAS: Received Security Mode Complete' , 'Security Mode Complete')
                 ]
 
 DEFAULT_RADIO_BEARER_SETUP = [('SRB1 - Rx securityModeCommand','Security Mode Command'),
@@ -51,23 +59,25 @@ DEFAULT_RADIO_BEARER_SETUP = [('SRB1 - Rx securityModeCommand','Security Mode Co
                 ('SRB1 - Rx rrcConnectionReconfiguration','Connection Reconfiguration'),
                 ('SRB1 - Tx rrcConnectionReconfigurationComplete','Connection Reconfiguration Complete'),
                 ('DL SRB1 PDU','Attach Accept'),
-                ('SRB2 - Tx ulInformationTransfer','Attach complete'),
+                ('SRB2 - Tx ulInformationTransfer','Attach Complete'),
                 ('SRB2 - Rx dlInformationTransfer','EMM Information'),
-                ('Received InitialContextSetupRequest','InitialContextSetupRequest'),
+                ('Received S1AP PDU','Initial Context Setup Request'),
                 ('Tx securityModeCommand','Security Mode Command'),
                 ('SRB1 - Rx securityModeComplete','Security Mode Complete'),
-                ('Sending InitialContextSetupResponse for rnti=','InitialContextSetupResponse'),
+                ('Sending InitialContextSetupResponse for rnti=','Initial Context Setup Response'),
                 ('Tx rrcConnectionReconfiguration','Connection Reconfiguration'),
                 ('SRB1 - Rx rrcConnectionReconfigurationComplete','Connection Reconfiguration Complete'),
-                ('SRB2 - Rx ulInformationTransfer','Attach complete'),
-                ('Sending Create Session Request','Create Session Request'),
-                ('Sent Initial Context Setup Request. E-RAB id','Initial Context SetUp Request')
+                ('SRB2 - Rx ulInformationTransfer','Attach Complete'),
+                ('Received S1AP PDU', 'EMM Information'),
+                ('Tx dlInformationTransfer', 'EMM Information'),
+                ('Sent Initial Context Setup Request. E-RAB id','Initial Context Setup Request'),
                 ('Received Initial Context Setup Response','Initial Context Setup Response'),
                 ('UL NAS: Received Attach Complete','Received Attach Complete'),
-                ('Sending EMM Information','UE EMM Information')
+                ('Sending EMM Information','EMM Information')
                 ]
 
-#DETACH = ['SRB2 - Tx ulInformationTransfer',
-#            'SRB2 - Rx ulInformationTransfer']
+DETACH = [('SRB2 - Tx ulInformationTransfer','Sending Detach Request'),
+           ('SRB2 - Rx ulInformationTransfer','Received UE Context Release Command'),
+           ('Received UE Context Release Complete','Detach')]
 
 ALL = CELL_SEARCH + RRC_CONNECTION + ATTACH_AND_AUTHENTICATION + DEFAULT_RADIO_BEARER_SETUP #+ DETACH
