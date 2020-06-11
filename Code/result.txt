@@ -1,4 +1,4 @@
-Total number of lines including the keywords  all  -> 62
+Total number of lines including the keywords  All  -> 62
  Tuple example : (literal line, time, Tx, Rx, Description)
 ---------------------------------------------------------------------------
 ('15:58:35.112763 [RRC ] [I] BCCH-BCH - Rx MIB (3 B)', '15:58:35.112763', 'eNodeB', 'UE', 'MIB')

@@ -146,33 +146,38 @@ def get_tx(entity, line):
         else: res = enb
     return res
 
-def deleting_doubles(list_original):
-    list = list_original.copy()
+def deleting_doubles(list):
+    indios = []
     res = []
     bingo = False
     time_e = ''
     time_r = ''
-    for x in list:
+    for n,x in enumerate(list):
         bingo = False
-        for y in list:
-            if y[4]==x[4] and y[2]==x[2] and y[3]==x[3] and y[0]!=x[0] and y[1]!=x[1]:
-                if y[1] <= x[1]:
-                    time_e = y[1]
-                    time_r = x[1]
-                else:
-                    time_e = x[1]
-                    time_r = y[1]
+        if n == (len(list)-1):
+            break
+        if n not in indios:
+            for y in range(n+1,len(list)):
+
+                #if y[4]==x[4] and y[2]==x[2] and y[3]==x[3] and y[1]!=x[1]:
+                if list[y][4]==x[4] and list[y][2]==x[2] and list[y][3]==x[3] and list[y][1]!=x[1]:
+                    #if y[1] <= x[1]:
+                    if list[y][1] <= x[1]:
+                        time_e = list[y][1]
+                        time_r = x[1]
+                    else:
+                        time_e = x[1]
+                        time_r = list[y][1]
+                    ##tupla = (time_e, time_r, Tx, Rx, Description)
+                    tupla = (time_e, time_r, x[2], x[3], x[4])#, x[0], y[0])
+                    res.append(tupla)
+                    indios.append(y)
+                    bingo = True
+                    break
+            if bingo == False:#and x!=None:
                 ##tupla = (time_e, time_r, Tx, Rx, Description)
-                tupla = (time_e, time_r, x[2], x[3], x[4])#, x[0], y[0])
+                tupla = ('0', x[1], x[2], x[3], x[4])#, x[0], x[0])
                 res.append(tupla)
-                list.remove(x)
-                list.remove(y)
-                bingo = True
-                break
-        if bingo == False:
-            ##tupla = (time_e, time_r, Tx, Rx, Description)
-            tupla = ('0', x[1], x[2], x[3], x[4])#, x[0], x[0])
-            res.append(tupla)
     return res
 
 ####Formatting the final list into PUML language
@@ -186,3 +191,35 @@ def formatter(list, procedure):
     result_file = open("result.puml", "wt")
     result_file.write(w)
     result_file.close()
+
+# def deleting_doubles(list_original):
+#     list_x = list_original.copy()
+#     list_y = list_original.copy()
+#     res = []
+#     bingo = False
+#     time_e = ''
+#     time_r = ''
+#     for n,x in enumerate(list_x):
+#         bingo = False
+#         if n == (len(list_x)-1):
+#             break
+#         for y in range(n+1,len(list_x)): #list_y:
+#             #if y[4]==x[4] and y[2]==x[2] and y[3]==x[3] and y[1]!=x[1]:
+#             if list_y[y][4]==x[4] and list_y[y][2]==x[2] and list_y[y][3]==x[3] and list_y[y][1]!=x[1]:
+#                 #if y[1] <= x[1]:
+#                 if list_y[y][1] <= x[1]:
+#                     time_e = list_y[y][1]
+#                     time_r = x[1]
+#                 else:
+#                     time_e = x[1]
+#                     time_r = list_y[y][1]
+#                 ##tupla = (time_e, time_r, Tx, Rx, Description)
+#                 tupla = (time_e, time_r, x[2], x[3], x[4])#, x[0], y[0])
+#                 res.append(tupla)
+#                 bingo = True
+#                 break
+#         if bingo == False:#and x!=None:
+#             ##tupla = (time_e, time_r, Tx, Rx, Description)
+#             tupla = ('0', x[1], x[2], x[3], x[4])#, x[0], x[0])
+#             res.append(tupla)
+#     return res

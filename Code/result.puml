@@ -4,30 +4,41 @@ title ALL
 participant UE
 participant eNodeB
 collections EPC
+EPC -> eNodeB: S1 Setup Response
+EPC -> eNodeB: Identity Request
 eNodeB -> EPC: Identity Response
 EPC -> eNodeB: Authentication Request
 eNodeB -> EPC: Authentication Response
 EPC -> eNodeB: Security Mode Command
 eNodeB -> EPC: Security Mode Complete
 EPC -> eNodeB: Initial Context Setup Request
+UE -> eNodeB: Connection Reconfiguration
 UE -> eNodeB: Attach Complete
+eNodeB -> EPC: Received Attach Complete
 eNodeB -> UE: MIB
+UE -> eNodeB: Connection Reconfiguration Complete
 eNodeB -> UE: SIB1
 eNodeB -> UE: SIB2
-EPC -> eNodeB: S1 Setup Response
+eNodeB -> EPC: S1 Setup Request
 EPC -> eNodeB: S1 Setup Response
 UE -> eNodeB: Connection Request
 eNodeB -> UE: Connection Setup
 UE -> eNodeB: Connection Setup Complete (Attach request)
+eNodeB -> EPC: Initial UE Message (Attach Request)
 eNodeB -> UE: Identity Request
-eNodeB -> EPC: Authentication Response
 UE -> eNodeB: Identity Response
 eNodeB -> EPC: Authentication Response
+EPC -> eNodeB: S1 Setup Response
+eNodeB -> UE: Identity Request
+UE -> eNodeB: Identity Response
+eNodeB -> EPC: Authentication Response
+EPC -> eNodeB: S1 Setup Response
 eNodeB -> UE: Security Mode Command
 UE -> eNodeB: Security Mode Complete
 eNodeB -> EPC: Initial Context Setup Response
 eNodeB -> UE: Connection Reconfiguration
 eNodeB -> UE: Identity Request
 eNodeB -> UE: Attach Accept
+UE -> eNodeB: Identity Response
 eNodeB -> UE: Attach Accept
 @enduml
