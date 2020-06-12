@@ -1,4 +1,5 @@
 #-*-coding: utf8-*-
+import sys
 import time
 from datetime import datetime
 import constants
@@ -195,14 +196,26 @@ def deleting_doubles(list):
 
 ####Formatting the final list into PUML language
 def formatter(list, procedure):
+    ue = 'UE'
+    enb = 'eNodeB'
+    epc = 'EPC'
     w = '@startuml \nheader IBANEZ Israel, MACEDO Luis \ntitle {0}\n'.format(procedure)
     w += 'participant UE\nparticipant eNodeB\ncollections EPC\n'
     for elem in list:
         lat = get_latency_time(elem[0],elem[1])
-        w += '{0} -> {1}: {2} dt={3}\n'.format(elem[2], elem[3], elem[4], lat)
-    w += "@enduml\n"
+        w += '{0} -> {1}: **{2}**       //DeltaT ={3} ms//\n'.format(elem[2], elem[3], elem[4], lat.microseconds/1000)
+        if elem[2] == enb:
+            if elem[3] == ue:
+                w += 'note left: {0} \nnote right: {1}\n'.format(elem[1], elem[0])
+            else:
+                w += 'note left: {0} \nnote right: {1}\n'.format(elem[0], elem[1])
+        elif elem[2] == ue:
+            w += 'note left: {0} \nnote right: {1}\n'.format(elem[0], elem[1])
+        else:
+            w += 'note left: {0} \nnote right: {1}\n'.format(elem[1], elem[0])
+    w += '@enduml\n'
 
-    result_file = open("result.puml", "wt")
+    result_file = open('result.puml', 'wt')
     result_file.write(w)
     result_file.close()
 

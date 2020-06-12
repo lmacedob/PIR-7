@@ -1,38 +1,103 @@
-@startuml 
-header IBANEZ Israel, MACEDO Luis 
+@startuml
+!pragma teoz true
+header IBANEZ Israel, MACEDO Luis
 title ALL
 participant UE
 participant eNodeB
 collections EPC
-eNodeB -> UE: MIB dt=15:58:35.112763
-eNodeB -> UE: SIB1 dt=0:20:52.233694
-eNodeB -> UE: SIB2 dt=0:20:52.377715
-eNodeB -> EPC: S1 Setup Request dt=0:00:00.000138
-EPC -> eNodeB: S1 Setup Response dt=0:00:00.000593
-UE -> eNodeB: Connection Request dt=0:20:50.609606
-eNodeB -> UE: Connection Setup dt=0:20:50.638534
-UE -> eNodeB: Connection Setup Complete (Attach request) dt=0:20:50.289880
-eNodeB -> EPC: Initial UE Message (Attach Request) dt=0:00:00.000092
-EPC -> eNodeB: Identity Request dt=0:00:00.000095
-eNodeB -> UE: Identity Request dt=0:20:50.630344
-UE -> eNodeB: Identity Response dt=0:20:50.610729
-eNodeB -> EPC: Identity Response dt=0:00:00.000071
-EPC -> eNodeB: Authentication Request dt=0:00:00.000082
-eNodeB -> UE: Authentication Request dt=0:20:50.630432
-UE -> eNodeB: Authentication Response dt=0:20:50.610827
-eNodeB -> EPC: Authentication Response dt=0:00:00.000059
-EPC -> eNodeB: Security Mode Command dt=0:00:00.000208
-eNodeB -> UE: Security Mode Command dt=0:00:00.020623
-UE -> eNodeB: Security Mode Complete dt=0:00:00.020024
-eNodeB -> EPC: Security Mode Complete dt=0:00:00.000126
-EPC -> eNodeB: Initial Context Setup Request dt=0:00:00.000016
-eNodeB -> EPC: Initial Context Setup Response dt=0:00:00.000056
-eNodeB -> UE: Connection Reconfiguration [Attach Accept] dt=0:20:50.630090
-UE -> eNodeB: Connection Reconfiguration Complete dt=0:20:50.610275
-UE -> eNodeB: Attach Complete dt=0:20:50.614652
-eNodeB -> EPC: Attach Complete dt=0:00:00.183078
-EPC -> eNodeB: EMM Information dt=0:00:00.000006
-eNodeB -> UE: EMM Information dt=0:20:50.632487
-eNodeB -> UE: Security Mode Command dt=0:00:00.020912
-UE -> eNodeB: Security Mode Complete dt=0:00:00.020463
+{start} eNodeB -> UE: **MIB**       //DeltaT =112.763 ms//
+note left: 15:58:35.112763
+note right: 0:0:0.0
+||60||
+{end} eNodeB -> UE: **SIB1**       //DeltaT =233.694 ms//
+{start} <-> {end} : some time
+note left: 15:58:35.207472
+note right: 15:37:42.973778
+eNodeB -> UE: **SIB2**       //DeltaT =377.715 ms//
+note left: 15:58:35.351587
+note right: 15:37:42.973872
+eNodeB -> EPC: **S1 Setup Request**       //DeltaT =0.138 ms//
+note left: 15:37:42.974441
+note right: 15:37:42.974579
+EPC -> eNodeB: **S1 Setup Response**       //DeltaT =0.593 ms//
+note left: 15:37:42.975631
+note right: 15:37:42.975038
+UE -> eNodeB: **Connection Request**       //DeltaT =609.606 ms//
+note left: 15:37:44.742934
+note right: 15:58:35.352540
+eNodeB -> UE: **Connection Setup**       //DeltaT =638.534 ms//
+note left: 15:58:35.415504
+note right: 15:37:44.776970
+UE -> eNodeB: **Connection Setup Complete (Attach request)**       //DeltaT =289.88 ms//
+note left: 15:37:45.125961
+note right: 15:58:35.415841
+eNodeB -> EPC: **Initial UE Message (Attach Request)**       //DeltaT =0.092 ms//
+note left: 15:37:45.126002
+note right: 15:37:45.126094
+EPC -> eNodeB: **Identity Request**       //DeltaT =0.095 ms//
+note left: 15:37:45.126276
+note right: 15:37:45.126181
+eNodeB -> UE: **Identity Request**       //DeltaT =630.344 ms//
+note left: 15:58:35.756656
+note right: 15:37:45.126312
+UE -> eNodeB: **Identity Response**       //DeltaT =610.729 ms//
+note left: 15:37:45.145982
+note right: 15:58:35.756711
+eNodeB -> EPC: **Identity Response**       //DeltaT =0.071 ms//
+note left: 15:37:45.146028
+note right: 15:37:45.146099
+EPC -> eNodeB: **Authentication Request**       //DeltaT =0.082 ms//
+note left: 15:37:45.146221
+note right: 15:37:45.146139
+eNodeB -> UE: **Authentication Request**       //DeltaT =630.432 ms//
+note left: 15:58:35.776684
+note right: 15:37:45.146252
+UE -> eNodeB: **Authentication Response**       //DeltaT =610.827 ms//
+note left: 15:37:45.165999
+note right: 15:58:35.776826
+eNodeB -> EPC: **Authentication Response**       //DeltaT =0.059 ms//
+note left: 15:37:45.166033
+note right: 15:37:45.166092
+EPC -> eNodeB: **Security Mode Command**       //DeltaT =0.208 ms//
+note left: 15:37:45.166341
+note right: 15:37:45.166133
+eNodeB -> UE: **Security Mode Command**       //DeltaT =20.623 ms//
+note left: 15:37:45.187006
+note right: 15:37:45.166383
+UE -> eNodeB: **Security Mode Complete**       //DeltaT =20.024 ms//
+note left: 15:37:45.186001
+note right: 15:37:45.206025
+eNodeB -> EPC: **Security Mode Complete**       //DeltaT =0.126 ms//
+note left: 15:37:45.186040
+note right: 15:37:45.186166
+EPC -> eNodeB: **Initial Context Setup Request**       //DeltaT =0.016 ms//
+note left: 15:37:45.186851
+note right: 15:37:45.186835
+eNodeB -> EPC: **Initial Context Setup Response**       //DeltaT =0.056 ms//
+note left: 15:37:45.206061
+note right: 15:37:45.206117
+eNodeB -> UE: **Connection Reconfiguration [Attach Accept]**       //DeltaT =630.09 ms//
+note left: 15:58:35.836431
+note right: 15:37:45.206341
+UE -> eNodeB: **Connection Reconfiguration Complete**       //DeltaT =610.275 ms//
+note left: 15:37:45.226406
+note right: 15:58:35.836681
+UE -> eNodeB: **Attach Complete**       //DeltaT =614.652 ms//
+note left: 15:37:45.226828
+note right: 15:58:35.841480
+eNodeB -> EPC: **Attach Complete**       //DeltaT =183.078 ms//
+note left: 15:37:45.226855
+note right: 15:37:45.409933
+EPC -> eNodeB: **EMM Information**       //DeltaT =0.006 ms//
+note left: 15:37:45.410116
+note right: 15:37:45.410110
+eNodeB -> UE: **EMM Information**       //DeltaT =632.487 ms//
+note left: 15:58:36.042651
+note right: 15:37:45.410164
+eNodeB -> UE: **Security Mode Command**       //DeltaT =20.912 ms//
+note left: 15:58:35.817537
+note right: 15:58:35.796625
+UE -> eNodeB: **Security Mode Complete**       //DeltaT =20.463 ms//
+note left: 15:58:35.797128
+note right: 15:58:35.817591
 @enduml
