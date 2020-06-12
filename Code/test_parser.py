@@ -23,9 +23,11 @@ if __name__ == "__main__":
     #Let's get the lines from the log that interest us,
     #using the keyword to extract only the lines containing it
     #As a result, we have a list containing the interesting lines
-    lines_file_1 = outilParser.select_lines(file_1, keywords, 1,ind)    ##UE == 1
-    lines_file_2 = outilParser.select_lines(file_2,keywords, 2,ind)     ##eNodeB == 2
-    lines_file_3 = outilParser.select_lines(file_3,keywords, 3,ind)     ##EPC == 3
+    keywords_copy = keywords.copy()
+
+    lines_file_1 = outilParser.select_lines(file_1, keywords_copy, 1,ind)    ##UE == 1
+    lines_file_2 = outilParser.select_lines(file_2,keywords_copy, 2,ind)     ##eNodeB == 2
+    lines_file_3 = outilParser.select_lines(file_3,keywords_copy, 3,ind)     ##EPC == 3
 
     ###Important
     lines_final = lines_file_1 + lines_file_2 + lines_file_3

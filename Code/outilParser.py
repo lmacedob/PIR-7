@@ -9,7 +9,7 @@ import constants
 #return : list - a list containing all the recovered lines
 def select_lines(filename, keywords, entity, procedure):
     """Cette methode recupere une ligne depuis un fichier texte"""
-    res = list()
+    res = []
     rx = ''
     tx = ''
     time = ''
@@ -17,8 +17,8 @@ def select_lines(filename, keywords, entity, procedure):
 
     with open(filename, 'r') as my_file:
         for line in my_file:
-            for word in keywords:
-                if word[0] in line:
+            for n,word in enumerate(keywords):
+                if word!=None and word[0] in line:
                     fir = line.split("\n")
 
                     tx = get_tx(entity, fir[0])
@@ -28,6 +28,9 @@ def select_lines(filename, keywords, entity, procedure):
                     tup = (fir[0], time, tx, rx, word[1])
                     res.append(tup)
                     counter += 1
+
+                    keywords[n] = None
+
                     break
             if counter == constants.TOTAL_LINES[entity-1][procedure]:
                 break
@@ -66,6 +69,13 @@ def get_latency(line1, line2):
     res = t2 - t1
     return res
 
+def get_latency_time(time1, time2):
+    FMT = '%H:%M:%S.%f'
+    t1 = datetime.strptime(time1, FMT)
+    t2 = datetime.strptime(time2, FMT)
+    res = t2 - t1
+    return res
+
 
 #brief : methode to get the time stamp
 #parameters : "l" is a single line
@@ -98,6 +108,9 @@ def select_procedure(word):
     elif 'all' in key:
         res += constants.ALL
         ind = 5
+    elif 'test' in key:
+        res += constants.TEST
+        ind = 6
     lines_index.append(res)
     lines_index.append(ind)
     return lines_index
@@ -176,7 +189,7 @@ def deleting_doubles(list):
                     break
             if bingo == False:#and x!=None:
                 ##tupla = (time_e, time_r, Tx, Rx, Description)
-                tupla = ('0', x[1], x[2], x[3], x[4])#, x[0], x[0])
+                tupla = ('0:0:0.0', x[1], x[2], x[3], x[4])#, x[0], x[0])
                 res.append(tupla)
     return res
 
@@ -185,7 +198,8 @@ def formatter(list, procedure):
     w = '@startuml \nheader IBANEZ Israel, MACEDO Luis \ntitle {0}\n'.format(procedure)
     w += 'participant UE\nparticipant eNodeB\ncollections EPC\n'
     for elem in list:
-        w += '{0} -> {1}: {2}\n'.format(elem[2], elem[3], elem[4])
+        lat = get_latency_time(elem[0],elem[1])
+        w += '{0} -> {1}: {2} dt={3}\n'.format(elem[2], elem[3], elem[4], lat)
     w += "@enduml\n"
 
     result_file = open("result.puml", "wt")

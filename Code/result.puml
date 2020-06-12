@@ -4,41 +4,35 @@ title ALL
 participant UE
 participant eNodeB
 collections EPC
-EPC -> eNodeB: S1 Setup Response
-EPC -> eNodeB: Identity Request
-eNodeB -> EPC: Identity Response
-EPC -> eNodeB: Authentication Request
-eNodeB -> EPC: Authentication Response
-EPC -> eNodeB: Security Mode Command
-eNodeB -> EPC: Security Mode Complete
-EPC -> eNodeB: Initial Context Setup Request
-UE -> eNodeB: Connection Reconfiguration
-UE -> eNodeB: Attach Complete
-eNodeB -> EPC: Received Attach Complete
-eNodeB -> UE: MIB
-UE -> eNodeB: Connection Reconfiguration Complete
-eNodeB -> UE: SIB1
-eNodeB -> UE: SIB2
-eNodeB -> EPC: S1 Setup Request
-EPC -> eNodeB: S1 Setup Response
-UE -> eNodeB: Connection Request
-eNodeB -> UE: Connection Setup
-UE -> eNodeB: Connection Setup Complete (Attach request)
-eNodeB -> EPC: Initial UE Message (Attach Request)
-eNodeB -> UE: Identity Request
-UE -> eNodeB: Identity Response
-eNodeB -> EPC: Authentication Response
-EPC -> eNodeB: S1 Setup Response
-eNodeB -> UE: Identity Request
-UE -> eNodeB: Identity Response
-eNodeB -> EPC: Authentication Response
-EPC -> eNodeB: S1 Setup Response
-eNodeB -> UE: Security Mode Command
-UE -> eNodeB: Security Mode Complete
-eNodeB -> EPC: Initial Context Setup Response
-eNodeB -> UE: Connection Reconfiguration
-eNodeB -> UE: Identity Request
-eNodeB -> UE: Attach Accept
-UE -> eNodeB: Identity Response
-eNodeB -> UE: Attach Accept
+eNodeB -> UE: MIB dt=15:58:35.112763
+eNodeB -> UE: SIB1 dt=0:20:52.233694
+eNodeB -> UE: SIB2 dt=0:20:52.377715
+eNodeB -> EPC: S1 Setup Request dt=0:00:00.000138
+EPC -> eNodeB: S1 Setup Response dt=0:00:00.000593
+UE -> eNodeB: Connection Request dt=0:20:50.609606
+eNodeB -> UE: Connection Setup dt=0:20:50.638534
+UE -> eNodeB: Connection Setup Complete (Attach request) dt=0:20:50.289880
+eNodeB -> EPC: Initial UE Message (Attach Request) dt=0:00:00.000092
+EPC -> eNodeB: Identity Request dt=0:00:00.000095
+eNodeB -> UE: Identity Request dt=0:20:50.630344
+UE -> eNodeB: Identity Response dt=0:20:50.610729
+eNodeB -> EPC: Identity Response dt=0:00:00.000071
+EPC -> eNodeB: Authentication Request dt=0:00:00.000082
+eNodeB -> UE: Authentication Request dt=0:20:50.630432
+UE -> eNodeB: Authentication Response dt=0:20:50.610827
+eNodeB -> EPC: Authentication Response dt=0:00:00.000059
+EPC -> eNodeB: Security Mode Command dt=0:00:00.000208
+eNodeB -> UE: Security Mode Command dt=0:00:00.020623
+UE -> eNodeB: Security Mode Complete dt=0:00:00.020024
+eNodeB -> EPC: Security Mode Complete dt=0:00:00.000126
+EPC -> eNodeB: Initial Context Setup Request dt=0:00:00.000016
+eNodeB -> EPC: Initial Context Setup Response dt=0:00:00.000056
+eNodeB -> UE: Connection Reconfiguration [Attach Accept] dt=0:20:50.630090
+UE -> eNodeB: Connection Reconfiguration Complete dt=0:20:50.610275
+UE -> eNodeB: Attach Complete dt=0:20:50.614652
+eNodeB -> EPC: Attach Complete dt=0:00:00.183078
+EPC -> eNodeB: EMM Information dt=0:00:00.000006
+eNodeB -> UE: EMM Information dt=0:20:50.632487
+eNodeB -> UE: Security Mode Command dt=0:00:00.020912
+UE -> eNodeB: Security Mode Complete dt=0:00:00.020463
 @enduml
