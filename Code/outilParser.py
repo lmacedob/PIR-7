@@ -183,15 +183,16 @@ def deleting_doubles(list):
                         time_e = x[1]
                         time_r = list[y][1]
                     ##tupla = (time_e, time_r, Tx, Rx, Description)
-                    tupla = (time_e, time_r, x[2], x[3], x[4])#, x[0], y[0])
+                    tupla = (time_e, time_r, x[2], x[3], x[4],"0","0")#, x[0], y[0])
                     res.append(tupla)
                     indios.append(y)
                     bingo = True
                     break
             if bingo == False:#and x!=None:
-                ##tupla = (time_e, time_r, Tx, Rx, Description)
-                tupla = ('0:0:0.0', x[1], x[2], x[3], x[4])#, x[0], x[0])
+                ##tupla = (time_e, time_r, Tx, Rx, Description, Delta1,Delta2)
+                tupla = ('0:0:0.0', x[1], x[2], x[3], x[4],"0","0")#, x[0], x[0])
                 res.append(tupla)
+    res.sort()
     return res
 
 ####Formatting the final list into PUML language
@@ -203,21 +204,61 @@ def formatter(list, procedure):
     w += 'participant UE\nparticipant eNodeB\ncollections EPC\n'
     for elem in list:
         lat = get_latency_time(elem[0],elem[1])
-        w += '{0} -> {1}: **{2}**       //DeltaT ={3} ms//\n'.format(elem[2], elem[3], elem[4], lat.microseconds/1000)
+        w += '\n{0} -> {1}: **{2}**       //DeltaT ={3} ms//\n'.format(elem[2], elem[3], elem[4], lat.microseconds/1000)
         if elem[2] == enb:
             if elem[3] == ue:
-                w += 'note left: {0} \nnote right: {1}\n'.format(elem[1], elem[0])
+                w += 'note left\n\t{0}\n\t**DeltaT={1}**\nend note\nnote right\n\t{2}\n\t**DeltaT={3}**\nend note'.format(elem[1], elem[5],elem[0],elem[6])
             else:
-                w += 'note left: {0} \nnote right: {1}\n'.format(elem[0], elem[1])
+                w += 'note left\n\t{0}\n\t**DeltaT={1}**\nend note\nnote right\n\t{2}\n\t**DeltaT={3}**\nend note'.format(elem[0], elem[5],elem[1],elem[6])
         elif elem[2] == ue:
-            w += 'note left: {0} \nnote right: {1}\n'.format(elem[0], elem[1])
+            w += 'note left\n\t{0}\n\t**DeltaT={1}**\nend note\nnote right\n\t{2}\n\t**DeltaT={3}**\nend note'.format(elem[0], elem[5],elem[1],elem[6])
         else:
-            w += 'note left: {0} \nnote right: {1}\n'.format(elem[1], elem[0])
-    w += '@enduml\n'
+            w += 'note left\n\t{0}\n\t**DeltaT={1}**\nend note\nnote right\n\t{2}\n\t**DeltaT={3}**\nend note'.format(elem[1], elem[5],elem[0],elem[6])
+    w += '\n@enduml'
 
     result_file = open('result.puml', 'wt')
     result_file.write(w)
     result_file.close()
+
+def get_deltas(list):
+    entities = ('UE','eNodeB','EPC')
+    intermediate = ()
+    time1 = ''
+    time2= ''
+    for entity in entities:
+        n=0
+        for x in range(n, len(list)):
+            if list[x][2] == entity or list[x][3]== entity:
+                intermediate = list[x]
+                for y in range (x+1, len(list)):
+                    if list[y][2] == entity or list[y][3]== entity:
+                        if intermediate[3] == entity: #if rx == entity
+                            time1 = intermediate[1]  #get time rx
+                        else:
+                            time1 = intermediate[0]
+                        if list[y][3] == entity:
+                            time2 = list[y][1]  #get time rx
+                        else:
+                            time2 = list[y][0]     
+                        if entity == 'UE':
+                            list[x]= (list[x][0],list[x][1],list[x][2],list[x][3],list[x][4], str(get_latency_time(time1,time2).microseconds))
+                        elif entity == 'eNodeB':
+                            if list[x][3]=='UE' and list[x][2] =='eNodeB':#rx et tx
+                                list[x]= (list[x][0],list[x][1],list[x][2],list[x][3],list[x][4], list[x][5],str(get_latency_time(time1,time2).microseconds))
+                            elif list[x][3]=='EPC' and list[x][2] =='eNodeB':
+                                list[x]= (list[x][0],list[x][1],list[x][2],list[x][3],list[x][4],str(get_latency_time(time1,time2).microseconds))
+                            elif list[x][3]=='eNodeB' and list[x][2] =='EPC':
+                                list[x]= (list[x][0],list[x][1],list[x][2],list[x][3],list[x][4],str(get_latency_time(time1,time2).microseconds),'0')
+                            elif list[x][3]=='eNodeB' and list[x][2] =='UE':
+                                list[x]= (list[x][0],list[x][1],list[x][2],list[x][3],list[x][4], list[x][5],str(get_latency_time(time1,time2).microseconds))
+                        elif entity == 'EPC':
+                            list[x]= (list[x][0],list[x][1],list[x][2],list[x][3],list[x][4],list[x][5],str(get_latency_time(time1,time2).microseconds))
+                        x = y-1
+                        break
+
+        
+                    
+
 
 # def deleting_doubles(list_original):
 #     list_x = list_original.copy()

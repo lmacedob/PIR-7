@@ -31,10 +31,10 @@ if __name__ == "__main__":
 
     ###Important
     lines_final = lines_file_1 + lines_file_2 + lines_file_3
-
+    lines_final.sort()
     ##Deleting doubles and getting the final list of tuples
     treated_lines = outilParser.deleting_doubles(lines_final)
-    treated_lines.sort()
+    #treated_lines.sort()
     print("\n")
 
 
@@ -43,6 +43,7 @@ if __name__ == "__main__":
     lines_text = outilParser.toString_debug(lines_final, procedure)
     print(lines_text)
     print("\n")
+    outilParser.get_deltas(treated_lines)
 
     lines_text_after_treatment = outilParser.toString_debug(treated_lines, procedure)
     print(lines_text_after_treatment)
@@ -53,10 +54,15 @@ if __name__ == "__main__":
     text_file = open("result.txt", 'wt')
     text_file.write(lines_text)
     text_file.close()                   #Don't forget to close the file
+    
+    
 
     text_file_extra = open("mamalon.txt", 'wt')
     text_file_extra.write(lines_text_after_treatment)
     text_file_extra.close()
+
+    
+
 
     proc = procedure.upper()
     outilParser.formatter(treated_lines, proc)
